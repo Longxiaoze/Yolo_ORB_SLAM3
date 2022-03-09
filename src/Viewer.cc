@@ -270,6 +270,15 @@ void Viewer::Run()
             toShow = im;
         }
 
+        if (mvPersonArea.size() != 0)
+        {
+            for (auto vit = mvPersonArea.begin(); vit != mvPersonArea.end(); vit++)
+            {
+                cv::rectangle(toShow, *vit, cv::Scalar(0, 0, 255), 1);
+            }
+        }
+
+
         cv::imshow("ORB-SLAM3: Current Frame",toShow);
         cv::waitKey(mT);
 

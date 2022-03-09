@@ -69,7 +69,7 @@ public:
 
     // Preprocess the input and call Track(). Extract features and performs stereo matching.
     cv::Mat GrabImageStereo(const cv::Mat &imRectLeft,const cv::Mat &imRectRight, const double &timestamp, string filename);
-    cv::Mat GrabImageRGBD(const cv::Mat &imRGB,const cv::Mat &imD, const double &timestamp, string filename);
+    cv::Mat GrabImageRGBD(const cv::Mat &imRGB,const cv::Mat &imD, const double &timestamp, const std::vector<cv::Rect2i> &vPersonArea ,string filename);
     cv::Mat GrabImageMonocular(const cv::Mat &im, const double &timestamp, string filename);
     // cv::Mat GrabImageImuMonocular(const cv::Mat &im, const double &timestamp);
 
@@ -100,6 +100,10 @@ public:
     void NewDataset();
     int GetNumberDataset();
     int GetMatchesInliers();
+
+    /****************** self define *******************/
+    std::vector<cv::Rect2i> mvPersonArea;
+    
 public:
 
     // Tracking states

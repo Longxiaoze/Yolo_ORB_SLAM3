@@ -59,6 +59,10 @@ public:
     void SetTrackingPause();
 
     bool both;
+
+    /**************** self define *****************/
+    std::vector<cv::Rect2i> mvPersonArea;
+    
 private:
 
     bool ParseViewerParamFile(cv::FileStorage &fSettings);

@@ -760,7 +760,7 @@ namespace ORB_SLAM3
         return vResultKeys;
     }
 
-    void ORBextractor::ComputeKeyPointsOctTree(vector<vector<KeyPoint> >& allKeypoints)
+    void ORBextractor::ComputeKeyPointsOctTree(vector<vector<KeyPoint> >& allKeypoints, const vector<cv::Rect2i> &vPersonAreas)
     {
         allKeypoints.resize(nlevels);
 
@@ -850,6 +850,43 @@ namespace ORB_SLAM3
                         }
                     }
 
+                    /**************** self define******************/
+                    float scale = mvScaleFactor[level];
+                    for (auto vit = vToDistributeKeys.begin(); vit != vToDistributeKeys.end(); vit++)
+                    {
+                        vit->pt.x += minBorderX;
+                        vit->pt.y += minBorderY;
+                        vit->pt *= scale;
+                    }
+
+                    bool Find = false;
+                    for (auto vit_kp = vToDistributeKeys.begin(); vit_kp != vToDistributeKeys.end();)
+                    {
+                        for (auto vit_area = vPersonAreas.begin(); vit_area != vPersonAreas.end(); vit_area++)
+                        {
+                            Find = false;
+
+                            if (vit_area->contains(vit_kp->pt))
+                            {
+                                Find = true;
+                                vit_kp = vToDistributeKeys.erase(vit_kp);
+                                break;
+                            }
+                        }
+                        if (!Find)
+                        {
+                            ++vit_kp;
+                            Find = false;
+                        }
+                    }
+
+                    float scale_inverse = 1 / scale;
+                    for (auto vit = vToDistributeKeys.begin(); vit != vToDistributeKeys.end(); vit++)
+                    {
+                        vit->pt *= scale_inverse;
+                        vit->pt.x -= minBorderX;
+                        vit->pt.y -= minBorderY;
+                    }
                 }
             }
 
@@ -1066,7 +1103,7 @@ namespace ORB_SLAM3
     }
 
     int ORBextractor::operator()( InputArray _image, InputArray _mask, vector<KeyPoint>& _keypoints,
-                                  OutputArray _descriptors, std::vector<int> &vLappingArea)
+                                  OutputArray _descriptors, std::vector<int> &vLappingArea, const std::vector<cv::Rect2i> &vPersonArea)
     {
         //cout << "[ORBextractor]: Max Features: " << nfeatures << endl;
         if(_image.empty())
@@ -1079,7 +1116,7 @@ namespace ORB_SLAM3
         ComputePyramid(image);
 
         vector < vector<KeyPoint> > allKeypoints;
-        ComputeKeyPointsOctTree(allKeypoints);
+        ComputeKeyPointsOctTree(allKeypoints, vPersonArea);
         //ComputeKeyPointsOld(allKeypoints);
 
         Mat descriptors;

@@ -67,12 +67,50 @@ int main(int argc, char **argv)
 
     // Main loop
     cv::Mat imRGB, imD;
+
+    // self define
+    /************************ self define *************************/
+    ifstream f;
+    f.open(string(argv[3]) + "/" + "person_area.txt");
+    vector<cv::Rect2i> vPersonArea;
+
     for(int ni=0; ni<nImages; ni++)
     {
         // Read image and depthmap from file
         imRGB = cv::imread(string(argv[3])+"/"+vstrImageFilenamesRGB[ni],cv::IMREAD_UNCHANGED); //,cv::IMREAD_UNCHANGED);
         imD = cv::imread(string(argv[3])+"/"+vstrImageFilenamesD[ni],cv::IMREAD_UNCHANGED); //,cv::IMREAD_UNCHANGED);
         double tframe = vTimestamps[ni];
+
+        /************************ self define ******************/
+        string s;
+        getline(f, s);
+        stringstream ss;
+        ss << s;
+        int person_num;
+        string person_num_s;
+        ss >> person_num_s;
+        person_num = atoi(person_num_s.c_str());
+        if (person_num != 0)
+        {
+            for (int i = 0; i < person_num; i++)
+            {
+                stringstream  sss;
+                getline(f, s);
+                sss << s;
+                string x, y, width, height;
+                sss >> x >> y >> width >> height;
+                cv::Rect2i area(atoi(x.c_str()), atoi(y.c_str()), atoi(width.c_str()), atoi(height.c_str()));
+                vPersonArea.push_back(area);
+                sss.clear();
+            }
+        }
+        else
+        {
+            cv::Rect2i area(0, 0, 1, 1);
+            vPersonArea.push_back(area);
+        }
+        ss.clear();
+        /******************** self define ************************/
 
         if(imRGB.empty())
         {
@@ -88,7 +126,7 @@ int main(int argc, char **argv)
 #endif
 
         // Pass the image to the SLAM system
-        SLAM.TrackRGBD(imRGB,imD,tframe);
+        SLAM.TrackRGBD(imRGB,imD,tframe, vPersonArea);
 
 #ifdef COMPILEDWITHC11
         std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
@@ -109,6 +147,7 @@ int main(int argc, char **argv)
 
         if(ttrack<T)
             usleep((T-ttrack)*1e6);
+        vPersonArea.clear();
     }
 
     // Stop all threads
