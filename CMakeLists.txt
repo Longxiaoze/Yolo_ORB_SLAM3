@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.2)
 project(ORB_SLAM3)
 
 IF(NOT CMAKE_BUILD_TYPE)
@@ -33,6 +33,10 @@ endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
+
+add_definitions(-std=c++14)
+
+
 find_package(OpenCV 4.0)
 if(NOT OpenCV_FOUND)
   find_package(OpenCV 3.0)
@@ -48,12 +52,21 @@ find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
 find_package(realsense2)
 
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
+set(CMAKE_PREFIX_PATH ${PROJECT_SOURCE_DIR}/Thirdparty/torch)
+find_package(Torch REQUIRED)
+MESSAGE(${TORCH_LIBRARIES})
+MESSAGE(${CMAKE_MODULE_PATH})
+
+
 include_directories(
 ${PROJECT_SOURCE_DIR}
 ${PROJECT_SOURCE_DIR}/include
 ${PROJECT_SOURCE_DIR}/include/CameraModels
 ${EIGEN3_INCLUDE_DIR}
 ${Pangolin_INCLUDE_DIRS}
+${TORCH_INCLUDE_DIRS}
 )
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
@@ -85,6 +98,7 @@ src/CameraModels/KannalaBrandt8.cpp
 src/OptimizableTypes.cpp
 src/MLPnPsolver.cpp
 src/TwoViewReconstruction.cc
+src/YoloDetect.cpp
 include/System.h
 include/Tracking.h
 include/LocalMapping.h
@@ -113,17 +127,19 @@ include/OptimizableTypes.h
 include/MLPnPsolver.h
 include/TwoViewReconstruction.h
 include/Config.h
+include/YoloDetect.h
 )
 
 add_subdirectory(Thirdparty/g2o)
 
 target_link_libraries(${PROJECT_NAME}
+${TORCH_LIBRARIES}
 ${OpenCV_LIBS}
 ${EIGEN3_LIBS}
 ${Pangolin_LIBRARIES}
 ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
 ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
--lboost_serialization
+-lboost_serialization  
 -lcrypto
 )
 
@@ -194,3 +210,4 @@ add_executable(stereo_inertial_tum_vi
 Examples/Stereo-Inertial/stereo_inertial_tum_vi.cc)
 target_link_libraries(stereo_inertial_tum_vi ${PROJECT_NAME})
 
+add_definitions(-w)

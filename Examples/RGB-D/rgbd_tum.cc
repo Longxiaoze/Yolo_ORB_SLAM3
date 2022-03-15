@@ -25,6 +25,8 @@
 
 #include<System.h>
 
+#include <YoloDetect.h>
+
 using namespace std;
 
 void LoadImages(const string &strAssociationFilename, vector<string> &vstrImageFilenamesRGB,
@@ -70,9 +72,8 @@ int main(int argc, char **argv)
 
     // self define
     /************************ self define *************************/
-    ifstream f;
-    f.open(string(argv[3]) + "/" + "person_area.txt");
     vector<cv::Rect2i> vPersonArea;
+    YoloDetection Detector;
 
     for(int ni=0; ni<nImages; ni++)
     {
@@ -81,36 +82,15 @@ int main(int argc, char **argv)
         imD = cv::imread(string(argv[3])+"/"+vstrImageFilenamesD[ni],cv::IMREAD_UNCHANGED); //,cv::IMREAD_UNCHANGED);
         double tframe = vTimestamps[ni];
 
-        /************************ self define ******************/
-        string s;
-        getline(f, s);
-        stringstream ss;
-        ss << s;
-        int person_num;
-        string person_num_s;
-        ss >> person_num_s;
-        person_num = atoi(person_num_s.c_str());
-        if (person_num != 0)
-        {
-            for (int i = 0; i < person_num; i++)
-            {
-                stringstream  sss;
-                getline(f, s);
-                sss << s;
-                string x, y, width, height;
-                sss >> x >> y >> width >> height;
-                cv::Rect2i area(atoi(x.c_str()), atoi(y.c_str()), atoi(width.c_str()), atoi(height.c_str()));
-                vPersonArea.push_back(area);
-                sss.clear();
-            }
-        }
-        else
-        {
-            cv::Rect2i area(0, 0, 1, 1);
-            vPersonArea.push_back(area);
-        }
-        ss.clear();
-        /******************** self define ************************/
+        std::chrono::steady_clock::time_point t_yolo_begin = std::chrono::steady_clock::now();
+        Detector.GetImage(imRGB);
+        Detector.Detect();
+        std::chrono::steady_clock::time_point t_yolo_end = std::chrono::steady_clock::now();
+        double time_detect = std::chrono::duration_cast<std::chrono::duration<double>>(t_yolo_end-t_yolo_begin).count();
+        vPersonArea = Detector.mvPersonArea;
+        cout << "Yolo use time: " << time_detect << " s" << "   ";
+
+
 
         if(imRGB.empty())
         {
@@ -135,6 +115,9 @@ int main(int argc, char **argv)
 #endif
 
         double ttrack= std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1).count();
+        double system_dur = std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t_yolo_begin).count();
+
+        cout << "FPS: " << int(1/system_dur) << endl;
 
         vTimesTrack[ni]=ttrack;
 
@@ -147,7 +130,10 @@ int main(int argc, char **argv)
 
         if(ttrack<T)
             usleep((T-ttrack)*1e6);
+
         vPersonArea.clear();
+        Detector.ClearImage();
+        Detector.ClearArea();
     }
 
     // Stop all threads

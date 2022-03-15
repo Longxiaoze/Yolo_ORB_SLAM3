@@ -1,3 +1,24 @@
+# Yolo_ORB_SLAM3 (CPU VERSION)
+
+## Getting Started
+1.Install LibTorch.
+
+```shell
+wget https://download.pytorch.org/libtorch/nightly/cpu/libtorch-shared-with-deps-latest.zip
+unzip libtorch-shared-with-deps-latest.zip
+```
+2.Compile and Run
+Only the rgbd_tum target has been improved.
+
+```shell
+mkdir build
+cmake ..
+make rgbd_tum
+```
+
+
+---
+
 # ORB-SLAM3
 
 ### V0.4: Beta version, 21 April 2021
