@@ -344,7 +344,7 @@ struct FunctionSchema {
   }
 
   c10::optional<int> argumentIndexWithName(c10::string_view name) const {
-    for (const auto i : c10::irange(arguments().size())) {
+    for(size_t i = 0; i < arguments().size(); ++i) {
       if(name == arguments()[i].name())
         return i;
     }

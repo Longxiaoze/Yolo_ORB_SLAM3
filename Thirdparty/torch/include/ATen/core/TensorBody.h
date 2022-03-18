@@ -340,10 +340,6 @@ class TORCH_API Tensor: public TensorBase {
     return to(options().device(DeviceType::Metal), /*non_blocking*/ false, /*copy*/ false);
   }
 
-  Tensor meta() const {
-    return to(options().device(DeviceType::Meta), /*non_blocking*/ false, /*copy*/ false);
-  }
-
   // ~~~~~ Autograd API ~~~~~
 
   /// \fn bool is_leaf() const;
@@ -1154,6 +1150,7 @@ class TORCH_API Tensor: public TensorBase {
   at::Tensor & addcdiv_(const at::Tensor & tensor1, const at::Tensor & tensor2, const at::Scalar & value=1) const;
   ::std::tuple<at::Tensor,at::Tensor> lstsq(const at::Tensor & A) const;
   ::std::tuple<at::Tensor,at::Tensor> triangular_solve(const at::Tensor & A, bool upper=true, bool transpose=false, bool unitriangular=false) const;
+  at::Tensor linalg_solve_triangular(const at::Tensor & B, bool upper, bool left=true, bool unitriangular=false) const;
   ::std::tuple<at::Tensor,at::Tensor> symeig(bool eigenvectors=false, bool upper=true) const;
   ::std::tuple<at::Tensor,at::Tensor> eig(bool eigenvectors=false) const;
   ::std::tuple<at::Tensor,at::Tensor,at::Tensor> svd(bool some=true, bool compute_uv=true) const;
@@ -4642,6 +4639,11 @@ inline ::std::tuple<at::Tensor,at::Tensor> Tensor::triangular_solve(const at::Te
     return at::_ops::triangular_solve::call(const_cast<Tensor&>(*this), A, upper, transpose, unitriangular);
 }
 
+// aten::linalg_solve_triangular(Tensor self, Tensor B, *, bool upper, bool left=True, bool unitriangular=False) -> Tensor
+inline at::Tensor Tensor::linalg_solve_triangular(const at::Tensor & B, bool upper, bool left, bool unitriangular) const {
+    return at::_ops::linalg_solve_triangular::call(const_cast<Tensor&>(*this), B, upper, left, unitriangular);
+}
+
 // aten::symeig(Tensor self, bool eigenvectors=False, bool upper=True) -> (Tensor eigenvalues, Tensor eigenvectors)
 inline ::std::tuple<at::Tensor,at::Tensor> Tensor::symeig(bool eigenvectors, bool upper) const {
     return at::_ops::symeig::call(const_cast<Tensor&>(*this), eigenvectors, upper);
@@ -5188,7 +5190,7 @@ struct MaybeOwnedTraits<at::Tensor> {
     return &borrow;
   }
 
-  static bool debugBorrowIsValid(const borrow_type& /*borrow*/) {
+  static bool debugBorrowIsValid(const borrow_type& borrow) {
     return true;
   }
 };

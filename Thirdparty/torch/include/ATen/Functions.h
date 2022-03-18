@@ -202,6 +202,7 @@
 #include <ATen/ops/_histogramdd_bin_edges.h>
 #include <ATen/ops/_histogramdd_from_bin_cts.h>
 #include <ATen/ops/_histogramdd_from_bin_tensors.h>
+#include <ATen/ops/_index_copy.h>
 #include <ATen/ops/_index_put_impl.h>
 #include <ATen/ops/_indices.h>
 #include <ATen/ops/_is_zerotensor.h>
@@ -221,8 +222,8 @@
 #include <ATen/ops/_masked_softmax.h>
 #include <ATen/ops/_mkldnn_reshape.h>
 #include <ATen/ops/_mkldnn_transpose.h>
+#include <ATen/ops/_native_multi_head_self_attention.h>
 #include <ATen/ops/_neg_view.h>
-#include <ATen/ops/_nested_tensor.h>
 #include <ATen/ops/_new_zeros_with_same_feature_meta.h>
 #include <ATen/ops/_nnpack_available.h>
 #include <ATen/ops/_nnpack_spatial_convolution.h>
@@ -237,6 +238,7 @@
 #include <ATen/ops/_reshape_alias.h>
 #include <ATen/ops/_reshape_from_tensor.h>
 #include <ATen/ops/_rowwise_prune.h>
+#include <ATen/ops/_s_where.h>
 #include <ATen/ops/_sample_dirichlet.h>
 #include <ATen/ops/_saturate_weight_to_fp16.h>
 #include <ATen/ops/_segment_reduce_backward.h>

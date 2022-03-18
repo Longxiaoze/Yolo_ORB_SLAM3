@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a18d0608-c485-433c-920f-2de3a0e89fda" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ROS/Yolo_ORB_SLAM3/.idea/Yolo_ORB_SLAM3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROS/ORB_SLAM3/Asus.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROS/ORB_SLAM3/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROS/ORB_SLAM3/manifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROS/ORB_SLAM3/src/AR/ViewerAR.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROS/ORB_SLAM3/src/AR/ViewerAR.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROS/ORB_SLAM3/src/AR/ros_mono_ar.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROS/ORB_SLAM3/src/ros_mono.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROS/ORB_SLAM3/src/ros_mono_inertial.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROS/ORB_SLAM3/src/ros_rgbd.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROS/ORB_SLAM3/src/ros_stereo.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ROS/ORB_SLAM3/src/ros_stereo_inertial.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/build-hash" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/build-hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/build-version" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/build-version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/CPUApplyUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/CPUApplyUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/CPUFunctions_inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/CPUFunctions_inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/CUDAFunctions_inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/CUDAFunctions_inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/CompositeExplicitAutogradFunctions_inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/CompositeExplicitAutogradFunctions_inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/CompositeImplicitAutogradFunctions_inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/CompositeImplicitAutogradFunctions_inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Config.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/DynamicLibrary.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/DynamicLibrary.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ExpandBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/MetaFunctions_inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/MetaFunctions_inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/MethodOperators.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/MethodOperators.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/NativeFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/NativeFunctions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/NativeMetaFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/NativeMetaFunctions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/NestedTensorImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/NumericUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/NumericUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Operators.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Operators.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/RedispatchFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/RedispatchFunctions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/RegistrationDeclarations.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/RegistrationDeclarations.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Tensor.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Tensor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/TensorGeometry.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/TensorGeometry.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/TensorIndexing.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/TensorIndexing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/TensorUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/TensorUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/Utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/DistributionsHelper.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/DistributionsHelper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/Generator.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/Generator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/TensorAccessor.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/TensorAccessor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/TensorBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/TensorBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/TensorBody.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/TensorBody.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/aten_interned_strings.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/aten_interned_strings.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/boxing/KernelFunction_impl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/boxing/KernelFunction_impl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/class_type.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/class_type.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/dispatch/DispatchKeyExtractor.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/dispatch/DispatchKeyExtractor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/dynamic_type.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/dynamic_type.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/enum_type.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/enum_type.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/function.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/function.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/function_schema.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/function_schema.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/interned_strings.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/interned_strings.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/ivalue_inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/ivalue_inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/jit_type.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/jit_type.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/jit_type_base.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/jit_type_base.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/op_registration/op_allowlist.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/op_registration/op_allowlist.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/stack.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/core/stack.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec256/vec256_bfloat16.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec256/vec256_bfloat16.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec256/vec256_complex_double.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec256/vec256_complex_double.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec256/vec256_complex_float.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec256/vec256_complex_float.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec256/vec256_float_neon.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec256/vec256_float_neon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec256/vec256_qint.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec256/vec256_qint.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec512/vec512_bfloat16.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec512/vec512_bfloat16.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec512/vec512_complex_double.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec512/vec512_complex_double.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec512/vec512_complex_float.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec512/vec512_complex_float.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec512/vec512_qint.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cpu/vec/vec512/vec512_qint.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/CUDAApplyUtils.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/CUDAApplyUtils.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/CUDABlas.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/CUDABlas.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/CUDAConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/CUDAConfig.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/CUDAGeneratorImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/CUDAGeneratorImpl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/cub.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/cub.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/cub_definitions.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cuda/cub_definitions.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cudnn/Descriptors.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/cudnn/Descriptors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/detail/CUDAHooksInterface.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/detail/CUDAHooksInterface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/jit_macros.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/jit_macros.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Activation.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Activation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/AdaptivePooling.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/AdaptivePooling.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/BatchLinearAlgebra.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/BatchLinearAlgebra.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/BinaryOps.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/BinaryOps.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/BucketizationUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/BucketizationUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/CPUBlas.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/CPUBlas.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/ComplexHelper.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/ComplexHelper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/ConvUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/ConvUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Copy.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Copy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Cross.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Cross.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/DispatchStub.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/DispatchStub.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Distance.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Distance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/DistributionTemplates.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/DistributionTemplates.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Distributions.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Distributions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Fill.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Fill.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/FunctionOfAMatrixUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/FunctionOfAMatrixUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/GridSampler.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/GridSampler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Histogram.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Histogram.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/IndexingUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/IndexingUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/LinearAlgebraUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/LinearAlgebraUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/MaxPooling.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/MaxPooling.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Pool.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Pool.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/ReduceOpsUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/ReduceOpsUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/SharedReduceOps.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/SharedReduceOps.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Sorting.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Sorting.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/SortingUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/SortingUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/TensorAdvancedIndexing.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/TensorAdvancedIndexing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/TensorFactories.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/TensorFactories.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/TensorShape.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/TensorShape.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/TopKImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/TransposeType.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/TypeProperties.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/TypeProperties.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/UnaryOps.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/UnaryOps.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Unfold2d.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/Unfold2d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/UnfoldBackward.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/UnfoldBackward.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/UpSample.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/UpSample.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/batch_norm.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/batch_norm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/CatKernel.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/CatKernel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/DepthwiseConvKernel.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/DepthwiseConvKernel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/DistributionTemplates.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/DistributionTemplates.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/GridSamplerKernel.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/GridSamplerKernel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/IsContiguous.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/IsContiguous.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/Loops.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/Loops.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/MaxUnpoolKernel.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/MaxUnpoolKernel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/Reduce.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/Reduce.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/SerialStackImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/SerialStackImpl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/SoftmaxKernel.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/SoftmaxKernel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/StackKernel.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/StackKernel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/zmath.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cpu/zmath.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/Activation.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/Activation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/CUDAJitLoops.cuh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/CUDALoops.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/CUDALoops.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/CuFFTPlanCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/CuFFTPlanCache.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/CuFFTUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/CuFFTUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/DistributionTemplates.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/DistributionTemplates.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/Distributions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/GridSampler.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/GridSampler.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/GridSampler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/JitLoops.cuh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/Loops.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/Loops.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/Math.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/Math.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/MemoryAccess.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/MemoryAccess.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/MiscUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/MiscUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/Normalization.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/Normalization.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/PersistentSoftmax.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/PersistentSoftmax.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/UpSample.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/UpSample.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/im2col.cuh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/im2col.cuh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/jit_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/jit_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/thread_constants.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/cuda/thread_constants.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/group_norm.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/group_norm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/im2col_shape_check.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/im2col_shape_check.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/layer_norm.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/layer_norm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/quantized/cpu/fbgemm_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/quantized/cpu/fbgemm_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/quantized/cpu/qnnpack_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/quantized/cpu/qnnpack_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/quantized/cpu/quantized_ops.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/quantized/cpu/quantized_ops.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/quantized/cpu/xnnpack_utils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/native/quantized/packed_params.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/_nested_tensor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/_nested_tensor_compositeimplicitautograd_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/_nested_tensor_native.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/_nested_tensor_ops.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/add_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/add_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/amax_cpu_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/amax_cpu_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/amax_cuda_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/amax_cuda_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/amax_meta.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/amax_meta_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/amax_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/amax_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/empty_like_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/empty_like_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/fractional_max_pool3d_meta.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/fractional_max_pool3d_meta.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/fractional_max_pool3d_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/fractional_max_pool3d_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_compositeexplicitautograd_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_compositeexplicitautograd_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_cpu_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_cpu_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_cuda_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_cuda_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_meta.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_meta.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_meta_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_meta_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_ops.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_backward_ops.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_compositeexplicitautograd_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_compositeexplicitautograd_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_cpu_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_cpu_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_cuda_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_cuda_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_meta.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_meta.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_meta_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_meta_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_ops.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/gelu_ops.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/grid_sampler_3d_backward.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/grid_sampler_3d_backward.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/grid_sampler_3d_backward_cpu_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/grid_sampler_3d_backward_cpu_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/grid_sampler_3d_backward_cuda_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/grid_sampler_3d_backward_cuda_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/grid_sampler_3d_backward_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/grid_sampler_3d_backward_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/grid_sampler_3d_backward_ops.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/grid_sampler_3d_backward_ops.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy_compositeexplicitautograd_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy_compositeexplicitautograd_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy_cpu_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy_cuda_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy_meta.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy_meta_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy_ops.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_copy_ops.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_select_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/index_select_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/linalg_cross_compositeexplicitautograd_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/linalg_cross_meta.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/linalg_cross_meta_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/linalg_cross_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/linalg_cross_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/mse_loss_compositeexplicitautograd_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/mse_loss_meta.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/mse_loss_meta_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/mse_loss_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/mse_loss_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/normal_meta_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/normal_meta_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/normal_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/normal_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/reflection_pad1d_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/reflection_pad1d_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/reflection_pad2d_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/reflection_pad2d_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/to_sparse_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/to_sparse_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/unbind_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/unbind_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/where_compositeimplicitautograd_dispatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/where_compositeimplicitautograd_dispatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/where_cpu_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/where_cuda_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/zero_native.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/ATen/ops/zero_native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/Device.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/Device.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/DispatchKey.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/DispatchKey.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/ScalarType.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/ScalarType.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/Storage.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/Storage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/StorageImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/StorageImpl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/TensorImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/TensorImpl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/impl/DeviceGuardImplInterface.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/impl/DeviceGuardImplInterface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/impl/LocalDispatchKeySet.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/core/impl/LocalDispatchKeySet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/macros/Macros.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/macros/Macros.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Bitset.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Bitset.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/C++17.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/C++17.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Exception.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Exception.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Half.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Half.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Logging.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Logging.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/MaybeOwned.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/MaybeOwned.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Metaprogramming.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Metaprogramming.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Optional.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Optional.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/SmallVector.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/SmallVector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/Synchronized.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/TypeSafeSignMath.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/TypeSafeSignMath.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/intrusive_ptr.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/intrusive_ptr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/llvmMathExtras.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10/util/llvmMathExtras.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/NCCLUtils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/NCCLUtils.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/ProcessGroup.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/ProcessGroup.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/ProcessGroupNCCL.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/ProcessGroupNCCL.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/debug.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/debug.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/logger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/logger.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/reducer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/c10d/reducer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/core/macros.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/core/macros.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/operators/bisect_percentile_op.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/operators/bisect_percentile_op.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/operators/dropout_op.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/operators/dropout_op.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/operators/gather_ranges_to_dense_op.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/operators/gather_ranges_to_dense_op.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/operators/generate_proposals_op_util_nms.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/operators/generate_proposals_op_util_nms.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/serialize/crc_alt.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/serialize/crc_alt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/serialize/versions.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/caffe2/serialize/versions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/THCGenerateByteType.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/THCGenerateByteType.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/nn/functional/activation.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/nn/functional/activation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/nn/functional/batchnorm.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/nn/functional/batchnorm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/nn/modules/activation.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/nn/modules/activation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/nn/modules/container/modulelist.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/nn/modules/container/modulelist.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/nn/options/activation.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/nn/options/activation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/version.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/api/include/torch/version.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/FunctionsManual.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/FunctionsManual.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/engine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/generated/Functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/generated/Functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/python_variable_indexing.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/python_variable_indexing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/record_function_ops.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/record_function_ops.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/utils/grad_layout_contract.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/autograd/utils/grad_layout_contract.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/frontend/lexer.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/frontend/lexer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/frontend/schema_matching.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/frontend/schema_matching.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/frontend/sugared_value.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/frontend/sugared_value.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/ir/alias_analysis.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/ir/alias_analysis.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/ir/ir.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/ir/ir.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/jit_log.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/jit_log.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/passes/add_if_then_else.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/passes/cuda_graph_fuser.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/passes/cuda_graph_fuser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/passes/inliner.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/passes/inliner.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/python/pybind_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/python/pybind_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/python/python_sugared_value.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/python/python_sugared_value.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/runtime/interpreter.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/runtime/interpreter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/runtime/profiling_graph_executor_impl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/runtime/profiling_graph_executor_impl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/runtime/profiling_record.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/runtime/profiling_record.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/runtime/symbolic_shape_registry.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/runtime/symbolic_shape_registry.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/serialization/export.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/serialization/export.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/serialization/export_bytecode.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/serialization/export_bytecode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/serialization/flatbuffer_serializer.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/serialization/flatbuffer_serializer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/serialization/mobile_bytecode_generated.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/serialization/mobile_bytecode_generated.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/analysis.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/analysis.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/codegen.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/codegen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/cuda_codegen.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/cuda_codegen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/expr.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/expr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/external_functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/external_functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/external_functions_core.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/fwd_decls.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/fwd_decls.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/ir_cloner.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/ir_cloner.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/ir_mutator.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/ir_mutator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/ir_printer.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/ir_printer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/ir_visitor.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/ir_visitor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/kernel.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/kernel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/lowerings.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/lowerings.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/operators/quantization.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/operators/quantization.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/reduction.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/reduction.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/stmt.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/stmt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/tensor.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/jit/tensorexpr/tensor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/debug_util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/ir.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/ir.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/lazy_graph_executor.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/lazy_graph_executor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/lazy_view.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/lazy_view.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/shape.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/shape.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/shape_inference.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/tensor.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/tensor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/tensor_impl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/lazy/core/tensor_impl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/profiler/containers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/utils/disable_torch_function.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/utils/disable_torch_function.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/utils/python_compat.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/utils/python_compat.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/utils/tensor_new.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/utils/tensor_new.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/utils/throughput_benchmark-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/csrc/utils/throughput_benchmark-inl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/library.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/include/torch/library.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Caffe2/Caffe2Config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Caffe2/Caffe2Config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Caffe2/Caffe2ConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Caffe2/Caffe2ConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Caffe2/Caffe2Targets-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Caffe2/Caffe2Targets-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Caffe2/Caffe2Targets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Caffe2/Caffe2Targets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Caffe2/public/cuda.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Caffe2/public/cuda.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Gloo/GlooTargets-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Gloo/GlooTargets-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Gloo/GlooTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Gloo/GlooTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Tensorpipe/TensorpipeTargets-release.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Tensorpipe/TensorpipeTargets-release.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Tensorpipe/TensorpipeTargets.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Tensorpipe/TensorpipeTargets.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Torch/TorchConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Torch/TorchConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Torch/TorchConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Thirdparty/torch/share/cmake/Torch/TorchConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/YoloDetect.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/YoloDetect.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="26Y4FU1QwolSxWaHYFrArzKnG9N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ROS/Yolo_ORB_SLAM3" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a18d0608-c485-433c-920f-2de3a0e89fda" name="Changes" comment="" />
+      <created>1647587081382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647587081382</updated>
+      <workItem from="1647587082476" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

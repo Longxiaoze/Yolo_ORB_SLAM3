@@ -37,7 +37,7 @@ LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 add_definitions(-std=c++14)
 
 
-find_package(OpenCV 4.0)
+find_package(OpenCV 3.0)
 if(NOT OpenCV_FOUND)
   find_package(OpenCV 3.0)
   if(NOT OpenCV_FOUND)

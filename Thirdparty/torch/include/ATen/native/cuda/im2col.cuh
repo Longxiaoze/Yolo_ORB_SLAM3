@@ -1,5 +1,9 @@
 #pragma once
 
+#include <ATen/ATen.h>
+#include <ATen/TensorUtils.h>
+#include <ATen/Utils.h>
+
 #include <ATen/cuda/CUDAContext.h>
 #include <ATen/cuda/detail/KernelUtils.h>
 #include <ATen/cuda/detail/IndexUtils.cuh>

@@ -23,7 +23,7 @@ void impl(const at::Tensor & self, at::IntArrayRef padding, const at::Tensor & o
 struct TORCH_API structured_reflection_pad1d_out_cuda : public at::meta::structured_reflection_pad1d {
 void impl(const at::Tensor & self, at::IntArrayRef padding, const at::Tensor & out);
 };
-TORCH_API at::Tensor reflection_pad1d_quantized_cpu(const at::Tensor & self, at::IntArrayRef padding);
+TORCH_API at::Tensor reflection_pad1d_cpu(const at::Tensor & self, at::IntArrayRef padding);
 TORCH_API at::Tensor & reflection_pad1d_out_cpu(const at::Tensor & self, at::IntArrayRef padding, at::Tensor & out);
 
 } // namespace native

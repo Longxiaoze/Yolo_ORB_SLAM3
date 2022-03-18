@@ -1,10 +1,10 @@
-#pragma once
+#include <ATen/ATen.h>
+#include <ATen/NativeFunctions.h>
 #include <ATen/native/DispatchStub.h>
 
-namespace at {
-class Tensor;
+#pragma once
 
-namespace native {
+namespace at { namespace native {
 
 using max_unpooling_fn = void(*)(Tensor&, const Tensor&, const Tensor&);
 

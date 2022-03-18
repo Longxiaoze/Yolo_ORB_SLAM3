@@ -193,6 +193,8 @@ _(aten, _has_same_storage_numel) \
 _(aten, _histogramdd_bin_edges) \
 _(aten, _histogramdd_from_bin_cts) \
 _(aten, _histogramdd_from_bin_tensors) \
+_(aten, _index_copy) \
+_(aten, _index_copy_) \
 _(aten, _index_put_impl) \
 _(aten, _index_put_impl_) \
 _(aten, _indices) \
@@ -215,8 +217,8 @@ _(aten, _masked_softmax) \
 _(aten, _mkldnn_reshape) \
 _(aten, _mkldnn_transpose) \
 _(aten, _mkldnn_transpose_) \
+_(aten, _native_multi_head_self_attention) \
 _(aten, _neg_view) \
-_(aten, _nested_tensor) \
 _(aten, _new_zeros_with_same_feature_meta) \
 _(aten, _nnpack_available) \
 _(aten, _nnpack_spatial_convolution) \
@@ -231,6 +233,7 @@ _(aten, _remove_batch_dim) \
 _(aten, _reshape_alias) \
 _(aten, _reshape_from_tensor) \
 _(aten, _rowwise_prune) \
+_(aten, _s_where) \
 _(aten, _sample_dirichlet) \
 _(aten, _saturate_weight_to_fp16) \
 _(aten, _segment_reduce_backward) \
@@ -1355,7 +1358,6 @@ _(attr, anchor) \
 _(attr, angle) \
 _(attr, api_name) \
 _(attr, append) \
-_(attr, approximate) \
 _(attr, assume_unique) \
 _(attr, atol) \
 _(attr, averaging_const) \
@@ -1571,7 +1573,6 @@ _(attr, length) \
 _(attr, lengths) \
 _(attr, level) \
 _(attr, like) \
-_(attr, list) \
 _(attr, log_alpha) \
 _(attr, log_input) \
 _(attr, log_probs) \
@@ -1676,13 +1677,18 @@ _(attr, pow) \
 _(attr, prepend) \
 _(attr, primal) \
 _(attr, prob) \
+_(attr, proj_bias) \
 _(attr, proj_size) \
+_(attr, proj_weight) \
 _(attr, q) \
+_(attr, qkv_bias) \
+_(attr, qkv_weight) \
 _(attr, qr) \
 _(attr, qtensor) \
 _(attr, quant_max) \
 _(attr, quant_min) \
 _(attr, quasi) \
+_(attr, query) \
 _(attr, r) \
 _(attr, random_samples) \
 _(attr, range) \

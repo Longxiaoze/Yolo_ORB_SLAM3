@@ -40,25 +40,25 @@ namespace _ops {
 
 
 struct TORCH_API gelu_out {
-  using schema = at::Tensor & (const at::Tensor &, c10::string_view, at::Tensor &);
+  using schema = at::Tensor & (const at::Tensor &, at::Tensor &);
   using ptr_schema = schema*;
   // See Note [static constexpr char* members for windows NVCC]
   STATIC_CONSTEXPR_STR_INL_EXCEPT_WIN_CUDA(name, "aten::gelu")
   STATIC_CONSTEXPR_STR_INL_EXCEPT_WIN_CUDA(overload_name, "out")
-  STATIC_CONSTEXPR_STR_INL_EXCEPT_WIN_CUDA(schema_str, "gelu.out(Tensor self, *, str approximate='none', Tensor(a!) out) -> Tensor(a!)")
-  static at::Tensor & call(const at::Tensor & self, c10::string_view approximate, at::Tensor & out);
-  static at::Tensor & redispatch(c10::DispatchKeySet dispatchKeySet, const at::Tensor & self, c10::string_view approximate, at::Tensor & out);
+  STATIC_CONSTEXPR_STR_INL_EXCEPT_WIN_CUDA(schema_str, "gelu.out(Tensor self, *, Tensor(a!) out) -> Tensor(a!)")
+  static at::Tensor & call(const at::Tensor & self, at::Tensor & out);
+  static at::Tensor & redispatch(c10::DispatchKeySet dispatchKeySet, const at::Tensor & self, at::Tensor & out);
 };
 
 struct TORCH_API gelu {
-  using schema = at::Tensor (const at::Tensor &, c10::string_view);
+  using schema = at::Tensor (const at::Tensor &);
   using ptr_schema = schema*;
   // See Note [static constexpr char* members for windows NVCC]
   STATIC_CONSTEXPR_STR_INL_EXCEPT_WIN_CUDA(name, "aten::gelu")
   STATIC_CONSTEXPR_STR_INL_EXCEPT_WIN_CUDA(overload_name, "")
-  STATIC_CONSTEXPR_STR_INL_EXCEPT_WIN_CUDA(schema_str, "gelu(Tensor self, *, str approximate='none') -> Tensor")
-  static at::Tensor call(const at::Tensor & self, c10::string_view approximate);
-  static at::Tensor redispatch(c10::DispatchKeySet dispatchKeySet, const at::Tensor & self, c10::string_view approximate);
+  STATIC_CONSTEXPR_STR_INL_EXCEPT_WIN_CUDA(schema_str, "gelu(Tensor self) -> Tensor")
+  static at::Tensor call(const at::Tensor & self);
+  static at::Tensor redispatch(c10::DispatchKeySet dispatchKeySet, const at::Tensor & self);
 };
 
 }} // namespace at::_ops

@@ -39,9 +39,9 @@ using c10::TensorOptions;
 
 namespace cpu {
 
-TORCH_API at::Tensor gelu_backward(const at::Tensor & grad_output, const at::Tensor & self, c10::string_view approximate="none");
-TORCH_API at::Tensor & gelu_backward_out(at::Tensor & grad_input, const at::Tensor & grad_output, const at::Tensor & self, c10::string_view approximate="none");
-TORCH_API at::Tensor & gelu_backward_outf(const at::Tensor & grad_output, const at::Tensor & self, c10::string_view approximate, at::Tensor & grad_input);
+TORCH_API at::Tensor gelu_backward(const at::Tensor & grad, const at::Tensor & self);
+TORCH_API at::Tensor & gelu_backward_out(at::Tensor & grad_input, const at::Tensor & grad, const at::Tensor & self);
+TORCH_API at::Tensor & gelu_backward_outf(const at::Tensor & grad, const at::Tensor & self, at::Tensor & grad_input);
 
 } // namespace cpu
 } // namespace at

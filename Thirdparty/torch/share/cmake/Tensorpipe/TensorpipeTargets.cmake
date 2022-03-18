@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget tensorpipe_uv tensorpipe)
+foreach(_expectedTarget tensorpipe_uv tensorpipe tensorpipe_cuda)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -63,6 +63,14 @@ add_library(tensorpipe STATIC IMPORTED)
 set_target_properties(tensorpipe PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:tensorpipe_uv>"
+)
+
+# Create imported target tensorpipe_cuda
+add_library(tensorpipe_cuda STATIC IMPORTED)
+
+set_target_properties(tensorpipe_cuda PROPERTIES
+  INTERFACE_INCLUDE_DIRECTORIES "/usr/local/cuda/include"
+  INTERFACE_LINK_LIBRARIES "tensorpipe;/usr/local/cuda/lib64/libcudart.so"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

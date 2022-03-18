@@ -45,10 +45,6 @@ namespace c10 {
   _(prim, CudaFusionGuard)           \
   _(prim, FunctionalGraph)           \
   _(prim, add_optional)              \
-  _(prim, view_copy)                 \
-  _(prim, reshape_copy)              \
-  _(prim, squeeze_copy)              \
-  _(prim, unsqueeze_copy)            \
   _(prim, DifferentiableGraph)       \
   _(prim, TensorExprGroup)           \
   _(prim, TensorExprDynamicGroup)    \
@@ -96,7 +92,6 @@ namespace c10 {
   _(prim, With)                      \
   _(prim, Enter)                     \
   _(prim, Exit)                      \
-  _(prim, IfThenElse)                \
   _(aten, Bool)                      \
   _(aten, Int)                       \
   _(aten, FloatImplicit)             \
@@ -302,7 +297,6 @@ namespace c10 {
   _(attr, transA)                    \
   _(attr, transB)                    \
   _(attr, name)                      \
-  _(attr, module)                    \
   _(attr, beg)                       \
   _(attr, idx)                       \
   _(attr, split)                     \
@@ -314,8 +308,7 @@ namespace c10 {
   _(attr, cache_id)                  \
   _(attr, new_axis)                  \
   _(attr, warn_id)                   \
-  _(attr, allowzero)                 \
-  _(attr, seen_none)
+  _(attr, allowzero)
 
 enum class _keys : unique_t {
     #define DEFINE_KEY(ns, s) ns##_##s,

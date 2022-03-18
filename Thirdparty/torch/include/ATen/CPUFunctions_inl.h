@@ -92,6 +92,7 @@
 #include <ATen/ops/_histogramdd_bin_edges_cpu_dispatch.h>
 #include <ATen/ops/_histogramdd_from_bin_cts_cpu_dispatch.h>
 #include <ATen/ops/_histogramdd_from_bin_tensors_cpu_dispatch.h>
+#include <ATen/ops/_index_copy_cpu_dispatch.h>
 #include <ATen/ops/_index_put_impl_cpu_dispatch.h>
 #include <ATen/ops/_linalg_inv_out_helper_cpu_dispatch.h>
 #include <ATen/ops/_linalg_qr_helper_cpu_dispatch.h>
@@ -103,9 +104,11 @@
 #include <ATen/ops/_make_per_channel_quantized_tensor_cpu_dispatch.h>
 #include <ATen/ops/_make_per_tensor_quantized_tensor_cpu_dispatch.h>
 #include <ATen/ops/_masked_softmax_cpu_dispatch.h>
+#include <ATen/ops/_native_multi_head_self_attention_cpu_dispatch.h>
 #include <ATen/ops/_pdist_backward_cpu_dispatch.h>
 #include <ATen/ops/_pdist_forward_cpu_dispatch.h>
 #include <ATen/ops/_reshape_alias_cpu_dispatch.h>
+#include <ATen/ops/_s_where_cpu_dispatch.h>
 #include <ATen/ops/_sample_dirichlet_cpu_dispatch.h>
 #include <ATen/ops/_segment_reduce_backward_cpu_dispatch.h>
 #include <ATen/ops/_slow_conv2d_backward_cpu_dispatch.h>
@@ -273,7 +276,6 @@
 #include <ATen/ops/im2col_backward_cpu_dispatch.h>
 #include <ATen/ops/index_cpu_dispatch.h>
 #include <ATen/ops/index_add_cpu_dispatch.h>
-#include <ATen/ops/index_copy_cpu_dispatch.h>
 #include <ATen/ops/index_fill_cpu_dispatch.h>
 #include <ATen/ops/index_select_cpu_dispatch.h>
 #include <ATen/ops/is_set_to_cpu_dispatch.h>
@@ -505,7 +507,6 @@
 #include <ATen/ops/view_cpu_dispatch.h>
 #include <ATen/ops/view_as_complex_cpu_dispatch.h>
 #include <ATen/ops/view_as_real_cpu_dispatch.h>
-#include <ATen/ops/where_cpu_dispatch.h>
 #include <ATen/ops/xlogy_cpu_dispatch.h>
 #include <ATen/ops/zero_cpu_dispatch.h>
 

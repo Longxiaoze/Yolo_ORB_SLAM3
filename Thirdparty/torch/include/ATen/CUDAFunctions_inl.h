@@ -95,6 +95,7 @@
 #include <ATen/ops/_foreach_zero_cuda_dispatch.h>
 #include <ATen/ops/_fused_dropout_cuda_dispatch.h>
 #include <ATen/ops/_fused_moving_avg_obs_fq_helper_cuda_dispatch.h>
+#include <ATen/ops/_index_copy_cuda_dispatch.h>
 #include <ATen/ops/_index_put_impl_cuda_dispatch.h>
 #include <ATen/ops/_linalg_inv_out_helper_cuda_dispatch.h>
 #include <ATen/ops/_linalg_qr_helper_cuda_dispatch.h>
@@ -107,10 +108,12 @@
 #include <ATen/ops/_make_per_tensor_quantized_tensor_cuda_dispatch.h>
 #include <ATen/ops/_masked_scale_cuda_dispatch.h>
 #include <ATen/ops/_masked_softmax_cuda_dispatch.h>
+#include <ATen/ops/_native_multi_head_self_attention_cuda_dispatch.h>
 #include <ATen/ops/_pdist_backward_cuda_dispatch.h>
 #include <ATen/ops/_pdist_forward_cuda_dispatch.h>
 #include <ATen/ops/_pin_memory_cuda_dispatch.h>
 #include <ATen/ops/_reshape_alias_cuda_dispatch.h>
+#include <ATen/ops/_s_where_cuda_dispatch.h>
 #include <ATen/ops/_sample_dirichlet_cuda_dispatch.h>
 #include <ATen/ops/_segment_reduce_backward_cuda_dispatch.h>
 #include <ATen/ops/_slow_conv2d_backward_cuda_dispatch.h>
@@ -297,7 +300,6 @@
 #include <ATen/ops/im2col_backward_cuda_dispatch.h>
 #include <ATen/ops/index_cuda_dispatch.h>
 #include <ATen/ops/index_add_cuda_dispatch.h>
-#include <ATen/ops/index_copy_cuda_dispatch.h>
 #include <ATen/ops/index_fill_cuda_dispatch.h>
 #include <ATen/ops/index_select_cuda_dispatch.h>
 #include <ATen/ops/is_pinned_cuda_dispatch.h>
@@ -533,7 +535,6 @@
 #include <ATen/ops/view_cuda_dispatch.h>
 #include <ATen/ops/view_as_complex_cuda_dispatch.h>
 #include <ATen/ops/view_as_real_cuda_dispatch.h>
-#include <ATen/ops/where_cuda_dispatch.h>
 #include <ATen/ops/xlogy_cuda_dispatch.h>
 #include <ATen/ops/zero_cuda_dispatch.h>
 

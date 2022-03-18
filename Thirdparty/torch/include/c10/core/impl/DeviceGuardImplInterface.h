@@ -117,7 +117,6 @@ struct C10_API DeviceGuardImplInterface {
    */
   virtual Stream getStreamFromGlobalPool(Device, bool isHighPriority = false)
       const {
-    (void)isHighPriority; // Suppress unused varaible warning
     TORCH_CHECK(false, "Backend doesn't support acquiring a stream from pool.")
   }
 
@@ -131,7 +130,7 @@ struct C10_API DeviceGuardImplInterface {
   /**
    * Destroys the given event.
    */
-  virtual void destroyEvent(void* /*event*/, const DeviceIndex /*device_index*/)
+  virtual void destroyEvent(void* event, const DeviceIndex device_index)
       const noexcept {}
 
   /**
@@ -141,10 +140,10 @@ struct C10_API DeviceGuardImplInterface {
    * event to continue and marks that version as recorded.
    * */
   virtual void record(
-      void** /*event*/,
-      const Stream& /*stream*/,
-      const DeviceIndex /*device_index*/,
-      const c10::EventFlag /*flag*/) const {
+      void** event,
+      const Stream& stream,
+      const DeviceIndex device_index,
+      const c10::EventFlag flag) const {
     TORCH_CHECK(false, "Backend doesn't support events.");
   }
 
@@ -156,7 +155,7 @@ struct C10_API DeviceGuardImplInterface {
    * When the stream reaches this command it will stop processing
    * additional commands until that version of the event is marked as recorded.
    */
-  virtual void block(void* /*event*/, const Stream& /*stream*/) const {
+  virtual void block(void* event, const Stream& stream) const {
     TORCH_CHECK(false, "Backend doesn't support events.");
   }
 
@@ -166,7 +165,7 @@ struct C10_API DeviceGuardImplInterface {
    *  (2) the current version is marked as recorded.
    * Returns false otherwise.
    */
-  virtual bool queryEvent(void* /*event*/) const {
+  virtual bool queryEvent(void* event) const {
     TORCH_CHECK(false, "Backend doesn't support events.");
   }
 
@@ -181,7 +180,7 @@ struct C10_API DeviceGuardImplInterface {
    * Return true if all the work previously enqueued on the stream for
    * asynchronous execution has completed running on the device.
    */
-  virtual bool queryStream(const Stream& /*stream*/) const {
+  virtual bool queryStream(const Stream& stream) const {
     TORCH_CHECK(false, "Backend doesn't support querying streams.");
   }
 
@@ -189,7 +188,7 @@ struct C10_API DeviceGuardImplInterface {
    * Wait (by blocking the calling thread) until all the work previously
    * enqueued on the stream has completed running on the device.
    */
-  virtual void synchronizeStream(const Stream& /*stream*/) const {
+  virtual void synchronizeStream(const Stream& stream) const {
     TORCH_CHECK(false, "Backend doesn't support synchronizing streams.");
   }
 
@@ -226,15 +225,15 @@ struct NoOpDeviceGuardImpl final : public DeviceGuardImplInterface {
   void setDevice(Device) const override {
     // no-op
   }
-  void uncheckedSetDevice(Device) const noexcept override {
+  void uncheckedSetDevice(Device d) const noexcept override {
     // no-op
   }
-  Stream getStream(Device) const noexcept override {
+  Stream getStream(Device d) const noexcept override {
     // no-op
     return Stream(Stream::DEFAULT, Device(D, -1));
   }
   // NB: These do NOT set the current device
-  Stream exchangeStream(Stream) const noexcept override {
+  Stream exchangeStream(Stream s) const noexcept override {
     // no-op
     return Stream(Stream::DEFAULT, Device(D, -1));
   }
@@ -244,26 +243,26 @@ struct NoOpDeviceGuardImpl final : public DeviceGuardImplInterface {
 
   // Event-related functions
   void record(
-      void** /*event*/,
-      const Stream& /*stream*/,
-      const DeviceIndex /*device_index*/,
-      const EventFlag /*flag*/) const override {
+      void** event,
+      const Stream& stream,
+      const DeviceIndex device_index,
+      const EventFlag flag) const override {
     TORCH_CHECK(false, D, " backend doesn't support events.");
   }
-  void block(void* /*event*/, const Stream& /*stream*/) const override {
+  void block(void* event, const Stream& stream) const override {
     TORCH_CHECK(false, D, " backend doesn't support events.")
   }
-  bool queryEvent(void* /*event*/) const override {
+  bool queryEvent(void* event) const override {
     TORCH_CHECK(false, D, " backend doesn't support events.")
   }
-  void destroyEvent(void* /*event*/, const DeviceIndex /*device_index*/)
+  void destroyEvent(void* event, const DeviceIndex device_index)
       const noexcept override {}
 
   // Stream-related functions
-  bool queryStream(const Stream& /*stream*/) const override {
+  bool queryStream(const Stream& stream) const override {
     return true;
   }
-  void synchronizeStream(const Stream& /*stream*/) const override {
+  void synchronizeStream(const Stream& stream) const override {
     // Don't wait for anything.
   }
 };

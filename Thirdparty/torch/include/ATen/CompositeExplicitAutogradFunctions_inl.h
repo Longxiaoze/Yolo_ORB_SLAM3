@@ -190,7 +190,6 @@
 #include <ATen/ops/leaky_relu_backward_compositeexplicitautograd_dispatch.h>
 #include <ATen/ops/lerp_compositeexplicitautograd_dispatch.h>
 #include <ATen/ops/lgamma_compositeexplicitautograd_dispatch.h>
-#include <ATen/ops/linalg_cross_compositeexplicitautograd_dispatch.h>
 #include <ATen/ops/linalg_inv_ex_compositeexplicitautograd_dispatch.h>
 #include <ATen/ops/linalg_lstsq_compositeexplicitautograd_dispatch.h>
 #include <ATen/ops/linalg_lu_factor_ex_compositeexplicitautograd_dispatch.h>
@@ -225,7 +224,6 @@
 #include <ATen/ops/mkldnn_convolution_compositeexplicitautograd_dispatch.h>
 #include <ATen/ops/mm_compositeexplicitautograd_dispatch.h>
 #include <ATen/ops/mode_compositeexplicitautograd_dispatch.h>
-#include <ATen/ops/mse_loss_compositeexplicitautograd_dispatch.h>
 #include <ATen/ops/mul_compositeexplicitautograd_dispatch.h>
 #include <ATen/ops/mv_compositeexplicitautograd_dispatch.h>
 #include <ATen/ops/mvlgamma_compositeexplicitautograd_dispatch.h>

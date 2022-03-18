@@ -100,13 +100,13 @@ transposeToFront(Tensor self, TensorList indices) {
   std::vector<int64_t> dims;
   std::vector<Tensor> transposedIndices;
   dims.reserve(self.dim());
-  for (const auto i : c10::irange(self.dim())) {
+  for (auto i = decltype(self.dim()){0}; i < self.dim(); i++) {
     if (indices[i].defined()) {
       dims.push_back(i);
       transposedIndices.emplace_back(indices[i]);
     }
   }
-  for (const auto i : c10::irange(self.dim())) {
+  for (auto i = decltype(self.dim()){0}; i < self.dim(); i++) {
     if (!indices[i].defined()) {
       dims.push_back(i);
       transposedIndices.emplace_back();
@@ -122,19 +122,19 @@ transposeToFrontAndInvPerm(Tensor self, TensorList indices) {
   std::vector<Tensor> transposedIndices;
   dims.reserve(self.dim());
   invPerm.resize(self.dim());
-  for (const auto i : c10::irange(self.dim())) {
+  for (auto i = decltype(self.dim()){0}; i < self.dim(); i++) {
     if (indices[i].defined()) {
       dims.push_back(i);
       transposedIndices.emplace_back(indices[i]);
     }
   }
-  for (const auto i : c10::irange(self.dim())) {
+  for (auto i = decltype(self.dim()){0}; i < self.dim(); i++) {
     if (!indices[i].defined()) {
       dims.push_back(i);
       transposedIndices.emplace_back();
     }
   }
-  for (const auto i : c10::irange(self.dim())) {
+  for (auto i = decltype(self.dim()){0}; i < self.dim(); i++) {
     invPerm[dims[i]] = i;
   }
   return std::make_tuple(self.permute(dims), std::move(transposedIndices), std::move(invPerm));

@@ -18,13 +18,13 @@ namespace at {
 namespace native {
 
 struct TORCH_API structured_gelu_out_cpu : public at::meta::structured_gelu {
-void impl(const at::Tensor & self, c10::string_view approximate, const at::Tensor & out);
+void impl(const at::Tensor & self, const at::Tensor & out);
 };
 struct TORCH_API structured_gelu_out_cuda : public at::meta::structured_gelu {
-void impl(const at::Tensor & self, c10::string_view approximate, const at::Tensor & out);
+void impl(const at::Tensor & self, const at::Tensor & out);
 };
-TORCH_API at::Tensor mkldnn_gelu(const at::Tensor & self, c10::string_view approximate="none");
-TORCH_API at::Tensor gelu_quantized_cpu(const at::Tensor & self, c10::string_view approximate="none");
+TORCH_API at::Tensor mkldnn_gelu(const at::Tensor & self);
+TORCH_API at::Tensor gelu_quantized_cpu(const at::Tensor & self);
 
 } // namespace native
 } // namespace at

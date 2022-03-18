@@ -6,6 +6,7 @@
 YoloDetection::YoloDetection()
 {
     mModule = torch::jit::load("yolov5s.torchscript.pt");
+
     std::ifstream f("coco.names");
     std::string name = "";
     while (std::getline(f, name))

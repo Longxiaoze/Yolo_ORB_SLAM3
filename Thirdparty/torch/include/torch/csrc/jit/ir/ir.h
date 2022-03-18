@@ -1520,17 +1520,17 @@ struct ProfileOp : public Node {
     callback_ = std::move(callback);
   }
 
-  bool hasSeenTensor() const {
-    return has_seen_tensor_;
+  bool hasRun() const {
+    return has_run_;
   }
 
-  void setHasSeenTensor(bool has_seen_tensor) {
-    has_seen_tensor_ = has_seen_tensor;
+  void setHasRun(bool has_run) {
+    has_run_ = has_run;
   }
 
  private:
   std::function<void(std::vector<IValue>&)> callback_;
-  bool has_seen_tensor_ = false;
+  bool has_run_ = false;
 };
 
 struct TORCH_API ProfileIValueOp : public Node {

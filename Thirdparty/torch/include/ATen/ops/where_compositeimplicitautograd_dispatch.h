@@ -39,6 +39,7 @@ using c10::TensorOptions;
 
 namespace compositeimplicitautograd {
 
+TORCH_API at::Tensor where(const at::Tensor & condition, const at::Tensor & self, const at::Tensor & other);
 TORCH_API at::Tensor where(const at::Tensor & condition, const at::Scalar & self, const at::Tensor & other);
 TORCH_API at::Tensor where(const at::Tensor & condition, const at::Tensor & self, const at::Scalar & other);
 TORCH_API at::Tensor where(const at::Tensor & condition, const at::Scalar & self, const at::Scalar & other);

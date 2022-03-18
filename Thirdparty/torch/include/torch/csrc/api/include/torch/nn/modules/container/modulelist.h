@@ -1,6 +1,5 @@
 #pragma once
 
-#include <c10/util/irange.h>
 #include <torch/nn/cloneable.h>
 #include <torch/nn/module.h>
 
@@ -208,10 +207,8 @@ class ModuleListImpl : public Cloneable<ModuleListImpl> {
           modules_.begin() + Iterator::difference_type(index),
           std::move(module));
 
-      for (const auto i : c10::irange(index, size() - 1)) {
-        (void)i; // Suppress unused variable warning
+      for (size_t i = index; i < size() - 1; ++i)
         replace_module(c10::to_string(index), modules_[index]);
-      }
       register_module(c10::to_string(size() - 1), modules_.back());
     }
   }

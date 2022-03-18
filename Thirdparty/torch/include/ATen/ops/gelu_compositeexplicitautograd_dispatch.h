@@ -39,7 +39,7 @@ using c10::TensorOptions;
 
 namespace compositeexplicitautograd {
 
-TORCH_API at::Tensor gelu(const at::Tensor & self, c10::string_view approximate="none");
+TORCH_API at::Tensor gelu(const at::Tensor & self);
 
 } // namespace compositeexplicitautograd
 } // namespace at

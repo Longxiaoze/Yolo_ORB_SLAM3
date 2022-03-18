@@ -49,7 +49,6 @@
 #include <ATen/ops/_has_compatible_shallow_copy_type_compositeimplicitautograd_dispatch.h>
 #include <ATen/ops/_is_zerotensor_compositeimplicitautograd_dispatch.h>
 #include <ATen/ops/_lu_with_info_compositeimplicitautograd_dispatch.h>
-#include <ATen/ops/_nested_tensor_compositeimplicitautograd_dispatch.h>
 #include <ATen/ops/_nnpack_available_compositeimplicitautograd_dispatch.h>
 #include <ATen/ops/_pack_padded_sequence_backward_compositeimplicitautograd_dispatch.h>
 #include <ATen/ops/_pad_packed_sequence_compositeimplicitautograd_dispatch.h>

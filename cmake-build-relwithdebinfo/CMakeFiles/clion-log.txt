@@ -1,0 +1,46 @@
+/usr/local/bin/cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/yuwenlu/Yolo_ORB_SLAM3_v2.0
+Build type: RelWithDebInfo
+-- Using flag -std=c++11.
+-- Found OpenCV: /usr (found suitable version "3.2.0", minimum required is "3.0") 
+OPENCV VERSION:
+3.2.0
+CMake Warning at CMakeLists.txt:53 (find_package):
+  By not providing "Findrealsense2.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "realsense2", but CMake did not find one.
+
+  Could not find a package configuration file provided by "realsense2" with
+  any of the following names:
+
+    realsense2Config.cmake
+    realsense2-config.cmake
+
+  Add the installation prefix of "realsense2" to CMAKE_PREFIX_PATH or set
+  "realsense2_DIR" to a directory containing one of the above files.  If
+  "realsense2" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+-- Caffe2: CUDA detected: 11.6
+-- Caffe2: CUDA nvcc is: /usr/local/cuda-11/bin/nvcc
+-- Caffe2: CUDA toolkit directory: /usr/local/cuda-11
+-- Caffe2: Header version is: 11.6
+-- Found cuDNN: v8.2.4  (include: /usr/local/cuda/include, library: /usr/local/cuda/lib64/libcudnn.so)
+-- /usr/local/cuda-11/lib64/libnvrtc.so shorthash is 589ebfa2
+-- Autodetected CUDA architecture(s):  6.1
+-- Added CUDA NVCC flags for: -gencode;arch=compute_61,code=sm_61
+torchtorch_library/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/lib/libc10.so/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/lib/libkineto.a/usr/local/cuda-11/lib64/stubs/libcuda.so/usr/local/cuda-11/lib64/libnvrtc.so/usr/local/cuda-11/lib64/libnvToolsExt.so/usr/local/cuda-11/lib64/libcudart.so/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/lib/libc10_cuda.so
+/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake_modules/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/public/../Modules_CUDA_fix
+CMake Deprecation Warning at Thirdparty/g2o/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- BUILD TYPE:RelWithDebInfo
+-- Compiling on Unix
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo

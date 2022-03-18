@@ -427,10 +427,6 @@ class TORCH_API ProcessGroup : public torch::CustomClassHolder {
   }
 
  protected:
-  // Implementations of this interface need to call this to setup
-  // appropriate logging etc.
-  void init();
-
   const int rank_;
   const int size_;
   // Optional sequence number structure for matching collectives.

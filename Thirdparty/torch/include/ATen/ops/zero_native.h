@@ -19,7 +19,6 @@ namespace native {
 
 TORCH_API at::Tensor & zero_(at::Tensor & self);
 TORCH_API at::Tensor & zero_sparse_(at::Tensor & self);
-TORCH_API at::Tensor & zero_sparse_csr_(at::Tensor & self);
 TORCH_API at::Tensor & mkldnn_zero_(at::Tensor & self);
 TORCH_API at::Tensor & zero_meta_(at::Tensor & self);
 

@@ -1796,6 +1796,23 @@ struct TORCH_API IndexAddBackward0 : public TraceableFunction {
   at::Scalar alpha;
 
 };
+struct TORCH_API IndexAddBackward1 : public TraceableFunction {
+  using TraceableFunction::TraceableFunction;
+  variable_list apply(variable_list&& grads) override;
+  std::string name() const override { return "IndexAddBackward1"; }
+  void release_variables() override {
+    std::lock_guard<std::mutex> lock(mutex_);
+    index_.reset_data();
+    source_.reset_data();
+  }
+
+  int64_t dim = 0;
+  SavedVariable index_;
+  int64_t source_dim = 0;
+  SavedVariable source_;
+  at::Scalar alpha;
+
+};
 struct TORCH_API IndexCopyBackward0 : public TraceableFunction {
   using TraceableFunction::TraceableFunction;
   variable_list apply(variable_list&& grads) override;
@@ -4610,10 +4627,10 @@ struct TORCH_API ViewAsComplexBackward0 : public Node {
 
 
 };
-struct TORCH_API WhereBackward0 : public TraceableFunction {
+struct TORCH_API SWhereBackward0 : public TraceableFunction {
   using TraceableFunction::TraceableFunction;
   variable_list apply(variable_list&& grads) override;
-  std::string name() const override { return "WhereBackward0"; }
+  std::string name() const override { return "SWhereBackward0"; }
   void release_variables() override {
     std::lock_guard<std::mutex> lock(mutex_);
     condition_.reset_data();
@@ -5155,22 +5172,6 @@ struct TORCH_API GeluBackward0 : public TraceableFunction {
   }
 
   SavedVariable self_;
-  std::string approximate;
-
-};
-struct TORCH_API GeluBackwardBackward0 : public TraceableFunction {
-  using TraceableFunction::TraceableFunction;
-  variable_list apply(variable_list&& grads) override;
-  std::string name() const override { return "GeluBackwardBackward0"; }
-  void release_variables() override {
-    std::lock_guard<std::mutex> lock(mutex_);
-    self_.reset_data();
-    grad_output_.reset_data();
-  }
-
-  SavedVariable self_;
-  std::string approximate;
-  SavedVariable grad_output_;
 
 };
 struct TORCH_API GluBackward0 : public TraceableFunction {

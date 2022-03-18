@@ -22,19 +22,19 @@
 namespace at {
 
 
-// aten::gelu.out(Tensor self, *, str approximate='none', Tensor(a!) out) -> Tensor(a!)
-TORCH_API inline at::Tensor & gelu_out(at::Tensor & out, const at::Tensor & self, c10::string_view approximate="none") {
-    return at::_ops::gelu_out::call(self, approximate, out);
+// aten::gelu.out(Tensor self, *, Tensor(a!) out) -> Tensor(a!)
+TORCH_API inline at::Tensor & gelu_out(at::Tensor & out, const at::Tensor & self) {
+    return at::_ops::gelu_out::call(self, out);
 }
 
-// aten::gelu.out(Tensor self, *, str approximate='none', Tensor(a!) out) -> Tensor(a!)
-TORCH_API inline at::Tensor & gelu_outf(const at::Tensor & self, c10::string_view approximate, at::Tensor & out) {
-    return at::_ops::gelu_out::call(self, approximate, out);
+// aten::gelu.out(Tensor self, *, Tensor(a!) out) -> Tensor(a!)
+TORCH_API inline at::Tensor & gelu_outf(const at::Tensor & self, at::Tensor & out) {
+    return at::_ops::gelu_out::call(self, out);
 }
 
-// aten::gelu(Tensor self, *, str approximate='none') -> Tensor
-TORCH_API inline at::Tensor gelu(const at::Tensor & self, c10::string_view approximate="none") {
-    return at::_ops::gelu::call(self, approximate);
+// aten::gelu(Tensor self) -> Tensor
+TORCH_API inline at::Tensor gelu(const at::Tensor & self) {
+    return at::_ops::gelu::call(self);
 }
 
 }

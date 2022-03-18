@@ -39,7 +39,6 @@ using c10::TensorOptions;
 
 namespace cpu {
 
-TORCH_API at::Tensor amax(const at::Tensor & self, at::IntArrayRef dim={}, bool keepdim=false);
 TORCH_API at::Tensor & amax_out(at::Tensor & out, const at::Tensor & self, at::IntArrayRef dim={}, bool keepdim=false);
 TORCH_API at::Tensor & amax_outf(const at::Tensor & self, at::IntArrayRef dim, bool keepdim, at::Tensor & out);
 

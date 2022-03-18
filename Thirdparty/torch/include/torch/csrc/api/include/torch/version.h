@@ -4,11 +4,11 @@
 #define TORCH_VERSION_MAJOR 1
 
 /// Indicates the minor version of LibTorch.
-#define TORCH_VERSION_MINOR 12
+#define TORCH_VERSION_MINOR 11
 
 /// Indicates the patch version of LibTorch.
 #define TORCH_VERSION_PATCH 0
 
 /// Indicates the version of LibTorch.
 #define TORCH_VERSION \
-  "1.12.0"
+  "1.11.0"

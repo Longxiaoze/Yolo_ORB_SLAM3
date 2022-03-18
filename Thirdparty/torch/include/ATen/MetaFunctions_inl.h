@@ -21,6 +21,7 @@
 #include <ATen/ops/_coalesced_meta_dispatch.h>
 #include <ATen/ops/_convert_indices_from_coo_to_csr_meta_dispatch.h>
 #include <ATen/ops/_convert_indices_from_csr_to_coo_meta_dispatch.h>
+#include <ATen/ops/_index_copy_meta_dispatch.h>
 #include <ATen/ops/_index_put_impl_meta_dispatch.h>
 #include <ATen/ops/_linalg_inv_out_helper_meta_dispatch.h>
 #include <ATen/ops/_linalg_svd_meta_dispatch.h>
@@ -53,7 +54,6 @@
 #include <ATen/ops/addmm_meta_dispatch.h>
 #include <ATen/ops/addmv_meta_dispatch.h>
 #include <ATen/ops/all_meta_dispatch.h>
-#include <ATen/ops/amax_meta_dispatch.h>
 #include <ATen/ops/aminmax_meta_dispatch.h>
 #include <ATen/ops/any_meta_dispatch.h>
 #include <ATen/ops/arange_meta_dispatch.h>
@@ -132,7 +132,6 @@
 #include <ATen/ops/igamma_meta_dispatch.h>
 #include <ATen/ops/igammac_meta_dispatch.h>
 #include <ATen/ops/index_add_meta_dispatch.h>
-#include <ATen/ops/index_copy_meta_dispatch.h>
 #include <ATen/ops/index_fill_meta_dispatch.h>
 #include <ATen/ops/isin_meta_dispatch.h>
 #include <ATen/ops/isneginf_meta_dispatch.h>
@@ -143,7 +142,6 @@
 #include <ATen/ops/leaky_relu_backward_meta_dispatch.h>
 #include <ATen/ops/lerp_meta_dispatch.h>
 #include <ATen/ops/lgamma_meta_dispatch.h>
-#include <ATen/ops/linalg_cross_meta_dispatch.h>
 #include <ATen/ops/linalg_lu_factor_ex_meta_dispatch.h>
 #include <ATen/ops/linspace_meta_dispatch.h>
 #include <ATen/ops/log_meta_dispatch.h>
@@ -169,7 +167,6 @@
 #include <ATen/ops/minimum_meta_dispatch.h>
 #include <ATen/ops/mish_meta_dispatch.h>
 #include <ATen/ops/mm_meta_dispatch.h>
-#include <ATen/ops/mse_loss_meta_dispatch.h>
 #include <ATen/ops/mul_meta_dispatch.h>
 #include <ATen/ops/ne_meta_dispatch.h>
 #include <ATen/ops/neg_meta_dispatch.h>

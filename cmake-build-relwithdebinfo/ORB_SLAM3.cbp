@@ -1,0 +1,1760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ORB_SLAM3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\local\;CMake Files\..\..\..\usr\local\lib\;CMake Files\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\usr\local\lib\cmake\Pangolin\;CMake Files\..\..\..\usr\local\share\;CMake Files\..\..\..\usr\local\share\eigen3\;CMake Files\..\..\..\usr\local\share\eigen3\cmake\;CMake Files\..\..\..\usr\share\;CMake Files\..\..\..\usr\share\OpenCV\;CMake Files\Thirdparty\;CMake Files\Thirdparty\torch\;CMake Files\Thirdparty\torch\share\;CMake Files\Thirdparty\torch\share\cmake\;CMake Files\Thirdparty\torch\share\cmake\Torch\;CMake Files\Thirdparty\torch\share\cmake\Caffe2\;CMake Files\Thirdparty\torch\share\cmake\Caffe2\public\;CMake Files\Thirdparty\torch\share\cmake\Caffe2\Modules_CUDA_fix\;CMake Files\Thirdparty\torch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\;CMake Files\Thirdparty\torch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\;CMake Files\Thirdparty\g2o\;CMake Files\cmake-build-relwithdebinfo\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ORB_SLAM3">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/lib/libORB_SLAM3.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 ORB_SLAM3"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ORB_SLAM3/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/lib/libORB_SLAM3.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 ORB_SLAM3/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rgbd_tum">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/RGB-D/rgbd_tum" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 rgbd_tum"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rgbd_tum/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/RGB-D/rgbd_tum" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 rgbd_tum/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stereo_kitti">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo/stereo_kitti" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 stereo_kitti"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stereo_kitti/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo/stereo_kitti" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 stereo_kitti/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stereo_euroc">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo/stereo_euroc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 stereo_euroc"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stereo_euroc/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo/stereo_euroc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 stereo_euroc/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stereo_tum_vi">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo/stereo_tum_vi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 stereo_tum_vi"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stereo_tum_vi/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo/stereo_tum_vi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 stereo_tum_vi/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_tum">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_tum" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_tum"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_tum/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_tum" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_tum/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_kitti">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_kitti" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_kitti"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_kitti/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_kitti" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_kitti/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_euroc">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_euroc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_euroc"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_euroc/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_euroc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_euroc/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_tum_vi">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_tum_vi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_tum_vi"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_tum_vi/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_tum_vi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_tum_vi/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_inertial_euroc">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular-Inertial/mono_inertial_euroc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_inertial_euroc"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_inertial_euroc/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular-Inertial/mono_inertial_euroc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_inertial_euroc/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_inertial_tum_vi">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular-Inertial/mono_inertial_tum_vi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_inertial_tum_vi"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mono_inertial_tum_vi/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular-Inertial/mono_inertial_tum_vi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 mono_inertial_tum_vi/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stereo_inertial_euroc">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial/stereo_inertial_euroc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 stereo_inertial_euroc"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stereo_inertial_euroc/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial/stereo_inertial_euroc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 stereo_inertial_euroc/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stereo_inertial_tum_vi">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial/stereo_inertial_tum_vi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 stereo_inertial_tum_vi"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stereo_inertial_tum_vi/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial/stereo_inertial_tum_vi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add option="-DUSE_C10D_NCCL"/>
+					<Add option="-D_LINUX_"/>
+					<Add option="-DHAVE_EIGEN"/>
+					<Add option="-DHAVE_GLEW"/>
+					<Add option="-DPANGO_DEFAULT_WIN_URI=&quot;x11&quot;"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/cuda-11/include"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 stereo_inertial_tum_vi/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="g2o">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/lib/libg2o.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Thirdparty/g2o"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUNIX"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/core"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/types"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/stuff"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Thirdparty/g2o/Makefile&quot;  VERBOSE=1 g2o"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Thirdparty/g2o/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Thirdparty/g2o/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Thirdparty/g2o/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="g2o/fast">
+				<Option output="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/lib/libg2o.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Thirdparty/g2o"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DUNIX"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/include/torch/csrc/api/include"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/core"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/types"/>
+					<Add directory="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/stuff"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Thirdparty/g2o/Makefile&quot;  VERBOSE=1 g2o/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Thirdparty/g2o/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Thirdparty/g2o/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/Thirdparty/g2o/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular-Inertial/mono_inertial_euroc.cc">
+			<Option target="mono_inertial_euroc"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular-Inertial/mono_inertial_tum_vi.cc">
+			<Option target="mono_inertial_tum_vi"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_euroc.cc">
+			<Option target="mono_euroc"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_kitti.cc">
+			<Option target="mono_kitti"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_tum.cc">
+			<Option target="mono_tum"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Monocular/mono_tum_vi.cc">
+			<Option target="mono_tum_vi"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/RGB-D/rgbd_tum.cc">
+			<Option target="rgbd_tum"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial/stereo_inertial_euroc.cc">
+			<Option target="stereo_inertial_euroc"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo-Inertial/stereo_inertial_tum_vi.cc">
+			<Option target="stereo_inertial_tum_vi"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo/stereo_euroc.cc">
+			<Option target="stereo_euroc"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo/stereo_kitti.cc">
+			<Option target="stereo_kitti"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Examples/Stereo/stereo_tum_vi.cc">
+			<Option target="stereo_tum_vi"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/base_binary_edge.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/base_binary_edge.hpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/base_edge.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/base_multi_edge.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/base_multi_edge.hpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/base_unary_edge.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/base_unary_edge.hpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/base_vertex.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/base_vertex.hpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/batch_stats.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/batch_stats.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/block_solver.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/block_solver.hpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/cache.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/cache.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/creators.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/estimate_propagator.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/estimate_propagator.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/factory.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/factory.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/hyper_dijkstra.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/hyper_dijkstra.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/hyper_graph.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/hyper_graph.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/hyper_graph_action.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/hyper_graph_action.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/jacobian_workspace.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/jacobian_workspace.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/linear_solver.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/marginal_covariance_cholesky.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/marginal_covariance_cholesky.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/matrix_structure.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/matrix_structure.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/openmp_mutex.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimizable_graph.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimizable_graph.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimization_algorithm.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimization_algorithm.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimization_algorithm_factory.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimization_algorithm_factory.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimization_algorithm_gauss_newton.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimization_algorithm_gauss_newton.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimization_algorithm_levenberg.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimization_algorithm_levenberg.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimization_algorithm_property.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/parameter.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/parameter.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/parameter_container.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/parameter_container.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/robust_kernel.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/robust_kernel.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/robust_kernel_factory.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/robust_kernel_factory.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/robust_kernel_impl.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/robust_kernel_impl.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/solver.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/solver.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/sparse_block_matrix.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/sparse_optimizer.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/core/sparse_optimizer.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/stuff/color_macros.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/stuff/macros.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/stuff/misc.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/stuff/os_specific.c">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/stuff/os_specific.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/stuff/property.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/stuff/property.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/stuff/string_tools.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/stuff/string_tools.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/stuff/timeutil.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/stuff/timeutil.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/types/se3_ops.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/types/se3_ops.hpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/types/se3quat.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/types/types_sba.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/types/types_sba.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h">
+			<Option target="g2o"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/Atlas.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels/GeometricCamera.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels/KannalaBrandt8.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/CameraModels/Pinhole.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/Config.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/Converter.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/Frame.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/FrameDrawer.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/G2oTypes.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/ImuTypes.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/Initializer.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/KeyFrame.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/KeyFrameDatabase.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/LocalMapping.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/LoopClosing.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/MLPnPsolver.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/Map.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/MapDrawer.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/MapPoint.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/ORBextractor.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/ORBmatcher.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/OptimizableTypes.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/Optimizer.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/Sim3Solver.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/System.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/Tracking.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/TwoViewReconstruction.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/Viewer.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/include/YoloDetect.h">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/Atlas.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/CameraModels/KannalaBrandt8.cpp">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/CameraModels/Pinhole.cpp">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/Converter.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/Frame.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/FrameDrawer.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/G2oTypes.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/ImuTypes.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/Initializer.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/KeyFrame.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/KeyFrameDatabase.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/LocalMapping.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/LoopClosing.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/MLPnPsolver.cpp">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/Map.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/MapDrawer.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/MapPoint.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/ORBextractor.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/ORBmatcher.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/OptimizableTypes.cpp">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/Optimizer.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/Sim3Solver.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/System.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/Tracking.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/TwoViewReconstruction.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/Viewer.cc">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/src/YoloDetect.cpp">
+			<Option target="ORB_SLAM3"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/local/lib/cmake/Pangolin/PangolinConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/local/lib/cmake/Pangolin/PangolinConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/local/lib/cmake/Pangolin/PangolinTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/local/lib/cmake/Pangolin/PangolinTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\Pangolin\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/local/share/eigen3/cmake/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/local/share/eigen3/cmake/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/local/share/eigen3/cmake/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/../../../usr/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Torch/TorchConfig.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Torch\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Torch/TorchConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Torch\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/Caffe2Config.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/Caffe2ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/Caffe2Targets-release.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/Caffe2Targets.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/public/cuda.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/public/mkl.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/public/mkldnn.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/public/threads.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/public/utils.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\Modules_CUDA_fix\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDNN.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\Modules_CUDA_fix\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/CMakeInitializeConfigs.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindPackageMessage.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake">
+			<Option virtualFolder="CMake Files\Thirdparty\torch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Thirdparty\g2o\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/Thirdparty/g2o/config.h.in">
+			<Option virtualFolder="CMake Files\Thirdparty\g2o\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/detect_cuda_compute_capabilities.cu">
+			<Option virtualFolder="CMake Files\cmake-build-relwithdebinfo\"/>
+		</Unit>
+		<Unit filename="/home/yuwenlu/Yolo_ORB_SLAM3_v2.0/cmake-build-relwithdebinfo/detect_cuda_version.cc">
+			<Option virtualFolder="CMake Files\cmake-build-relwithdebinfo\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

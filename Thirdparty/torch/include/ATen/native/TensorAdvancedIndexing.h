@@ -2,12 +2,11 @@
 
 // Indexing tensors by tensors
 
-#include <ATen/core/List.h>
-#include <ATen/core/Tensor.h>
+#include <ATen/ATen.h>
 #include <ATen/native/DispatchStub.h>
 
 namespace at {
-struct TensorIterator;
+  struct TensorIterator;
 }
 
 namespace at { namespace native {

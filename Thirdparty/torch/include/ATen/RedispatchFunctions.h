@@ -2957,9 +2957,9 @@ namespace redispatch {
         return at::_ops::grid_sampler_3d::redispatch(dispatchKeySet, input, grid, interpolation_mode, padding_mode, align_corners);
     }
     
-    // aten::grid_sampler_3d_backward(Tensor grad_output, Tensor input, Tensor grid, int interpolation_mode, int padding_mode, bool align_corners, bool[2] output_mask) -> (Tensor, Tensor)
-    TORCH_API inline ::std::tuple<at::Tensor,at::Tensor> grid_sampler_3d_backward(c10::DispatchKeySet dispatchKeySet, const at::Tensor & grad_output, const at::Tensor & input, const at::Tensor & grid, int64_t interpolation_mode, int64_t padding_mode, bool align_corners, ::std::array<bool,2> output_mask) {
-        return at::_ops::grid_sampler_3d_backward::redispatch(dispatchKeySet, grad_output, input, grid, interpolation_mode, padding_mode, align_corners, output_mask);
+    // aten::grid_sampler_3d_backward(Tensor grad_output, Tensor input, Tensor grid, int interpolation_mode, int padding_mode, bool align_corners) -> (Tensor, Tensor)
+    TORCH_API inline ::std::tuple<at::Tensor,at::Tensor> grid_sampler_3d_backward(c10::DispatchKeySet dispatchKeySet, const at::Tensor & grad_output, const at::Tensor & input, const at::Tensor & grid, int64_t interpolation_mode, int64_t padding_mode, bool align_corners) {
+        return at::_ops::grid_sampler_3d_backward::redispatch(dispatchKeySet, grad_output, input, grid, interpolation_mode, padding_mode, align_corners);
     }
     
     // aten::hann_window(int window_length, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None) -> Tensor
@@ -3140,16 +3140,6 @@ namespace redispatch {
     // aten::index.Tensor(Tensor self, Tensor?[] indices) -> Tensor
     TORCH_API inline at::Tensor index(c10::DispatchKeySet dispatchKeySet, const at::Tensor & self, const c10::List<c10::optional<at::Tensor>> & indices) {
         return at::_ops::index_Tensor::redispatch(dispatchKeySet, self, indices);
-    }
-    
-    // aten::index_copy.out(Tensor self, int dim, Tensor index, Tensor source, *, Tensor(a!) out) -> Tensor(a!)
-    TORCH_API inline at::Tensor & index_copy_out(c10::DispatchKeySet dispatchKeySet, at::Tensor & out, const at::Tensor & self, int64_t dim, const at::Tensor & index, const at::Tensor & source) {
-        return at::_ops::index_copy_out::redispatch(dispatchKeySet, self, dim, index, source, out);
-    }
-    
-    // aten::index_copy.out(Tensor self, int dim, Tensor index, Tensor source, *, Tensor(a!) out) -> Tensor(a!)
-    TORCH_API inline at::Tensor & index_copy_outf(c10::DispatchKeySet dispatchKeySet, const at::Tensor & self, int64_t dim, const at::Tensor & index, const at::Tensor & source, at::Tensor & out) {
-        return at::_ops::index_copy_out::redispatch(dispatchKeySet, self, dim, index, source, out);
     }
     
     // aten::index_copy_(Tensor(a!) self, int dim, Tensor index, Tensor source) -> Tensor(a!)
@@ -3380,6 +3370,11 @@ namespace redispatch {
     // aten::native_layer_norm(Tensor input, int[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)
     TORCH_API inline ::std::tuple<at::Tensor,at::Tensor,at::Tensor> native_layer_norm(c10::DispatchKeySet dispatchKeySet, const at::Tensor & input, at::IntArrayRef normalized_shape, const c10::optional<at::Tensor> & weight, const c10::optional<at::Tensor> & bias, double eps) {
         return at::_ops::native_layer_norm::redispatch(dispatchKeySet, input, normalized_shape, weight, bias, eps);
+    }
+    
+    // aten::_native_multi_head_self_attention(Tensor query, Tensor qkv_weight, Tensor qkv_bias, Tensor proj_weight, Tensor proj_bias, Tensor? mask=None) -> Tensor
+    TORCH_API inline at::Tensor _native_multi_head_self_attention(c10::DispatchKeySet dispatchKeySet, const at::Tensor & query, const at::Tensor & qkv_weight, const at::Tensor & qkv_bias, const at::Tensor & proj_weight, const at::Tensor & proj_bias, const c10::optional<at::Tensor> & mask={}) {
+        return at::_ops::_native_multi_head_self_attention::redispatch(dispatchKeySet, query, qkv_weight, qkv_bias, proj_weight, proj_bias, mask);
     }
     
     // aten::native_layer_norm_backward(Tensor grad_out, Tensor input, int[] normalized_shape, Tensor mean, Tensor rstd, Tensor? weight, Tensor? bias, bool[3] output_mask) -> (Tensor, Tensor, Tensor)
@@ -5212,34 +5207,34 @@ namespace redispatch {
         return at::_ops::prelu_backward::redispatch(dispatchKeySet, grad_output, self, weight);
     }
     
-    // aten::gelu.out(Tensor self, *, str approximate='none', Tensor(a!) out) -> Tensor(a!)
-    TORCH_API inline at::Tensor & gelu_out(c10::DispatchKeySet dispatchKeySet, at::Tensor & out, const at::Tensor & self, c10::string_view approximate="none") {
-        return at::_ops::gelu_out::redispatch(dispatchKeySet, self, approximate, out);
+    // aten::gelu.out(Tensor self, *, Tensor(a!) out) -> Tensor(a!)
+    TORCH_API inline at::Tensor & gelu_out(c10::DispatchKeySet dispatchKeySet, at::Tensor & out, const at::Tensor & self) {
+        return at::_ops::gelu_out::redispatch(dispatchKeySet, self, out);
     }
     
-    // aten::gelu.out(Tensor self, *, str approximate='none', Tensor(a!) out) -> Tensor(a!)
-    TORCH_API inline at::Tensor & gelu_outf(c10::DispatchKeySet dispatchKeySet, const at::Tensor & self, c10::string_view approximate, at::Tensor & out) {
-        return at::_ops::gelu_out::redispatch(dispatchKeySet, self, approximate, out);
+    // aten::gelu.out(Tensor self, *, Tensor(a!) out) -> Tensor(a!)
+    TORCH_API inline at::Tensor & gelu_outf(c10::DispatchKeySet dispatchKeySet, const at::Tensor & self, at::Tensor & out) {
+        return at::_ops::gelu_out::redispatch(dispatchKeySet, self, out);
     }
     
-    // aten::gelu(Tensor self, *, str approximate='none') -> Tensor
-    TORCH_API inline at::Tensor gelu(c10::DispatchKeySet dispatchKeySet, const at::Tensor & self, c10::string_view approximate="none") {
-        return at::_ops::gelu::redispatch(dispatchKeySet, self, approximate);
+    // aten::gelu(Tensor self) -> Tensor
+    TORCH_API inline at::Tensor gelu(c10::DispatchKeySet dispatchKeySet, const at::Tensor & self) {
+        return at::_ops::gelu::redispatch(dispatchKeySet, self);
     }
     
-    // aten::gelu_backward.grad_input(Tensor grad_output, Tensor self, *, str approximate='none', Tensor(a!) grad_input) -> Tensor(a!)
-    TORCH_API inline at::Tensor & gelu_backward_out(c10::DispatchKeySet dispatchKeySet, at::Tensor & grad_input, const at::Tensor & grad_output, const at::Tensor & self, c10::string_view approximate="none") {
-        return at::_ops::gelu_backward_grad_input::redispatch(dispatchKeySet, grad_output, self, approximate, grad_input);
+    // aten::gelu_backward.grad_input(Tensor grad, Tensor self, *, Tensor(a!) grad_input) -> Tensor(a!)
+    TORCH_API inline at::Tensor & gelu_backward_out(c10::DispatchKeySet dispatchKeySet, at::Tensor & grad_input, const at::Tensor & grad, const at::Tensor & self) {
+        return at::_ops::gelu_backward_grad_input::redispatch(dispatchKeySet, grad, self, grad_input);
     }
     
-    // aten::gelu_backward.grad_input(Tensor grad_output, Tensor self, *, str approximate='none', Tensor(a!) grad_input) -> Tensor(a!)
-    TORCH_API inline at::Tensor & gelu_backward_outf(c10::DispatchKeySet dispatchKeySet, const at::Tensor & grad_output, const at::Tensor & self, c10::string_view approximate, at::Tensor & grad_input) {
-        return at::_ops::gelu_backward_grad_input::redispatch(dispatchKeySet, grad_output, self, approximate, grad_input);
+    // aten::gelu_backward.grad_input(Tensor grad, Tensor self, *, Tensor(a!) grad_input) -> Tensor(a!)
+    TORCH_API inline at::Tensor & gelu_backward_outf(c10::DispatchKeySet dispatchKeySet, const at::Tensor & grad, const at::Tensor & self, at::Tensor & grad_input) {
+        return at::_ops::gelu_backward_grad_input::redispatch(dispatchKeySet, grad, self, grad_input);
     }
     
-    // aten::gelu_backward(Tensor grad_output, Tensor self, *, str approximate='none') -> Tensor
-    TORCH_API inline at::Tensor gelu_backward(c10::DispatchKeySet dispatchKeySet, const at::Tensor & grad_output, const at::Tensor & self, c10::string_view approximate="none") {
-        return at::_ops::gelu_backward::redispatch(dispatchKeySet, grad_output, self, approximate);
+    // aten::gelu_backward(Tensor grad, Tensor self) -> Tensor
+    TORCH_API inline at::Tensor gelu_backward(c10::DispatchKeySet dispatchKeySet, const at::Tensor & grad, const at::Tensor & self) {
+        return at::_ops::gelu_backward::redispatch(dispatchKeySet, grad, self);
     }
     
     // aten::infinitely_differentiable_gelu_backward(Tensor grad, Tensor self) -> Tensor
@@ -6405,6 +6400,11 @@ namespace redispatch {
     // aten::where(Tensor condition) -> Tensor[]
     TORCH_API inline ::std::vector<at::Tensor> where(c10::DispatchKeySet dispatchKeySet, const at::Tensor & condition) {
         return at::_ops::where::redispatch(dispatchKeySet, condition);
+    }
+    
+    // aten::_s_where(Tensor condition, Tensor self, Tensor other) -> Tensor
+    TORCH_API inline at::Tensor _s_where(c10::DispatchKeySet dispatchKeySet, const at::Tensor & condition, const at::Tensor & self, const at::Tensor & other) {
+        return at::_ops::_s_where::redispatch(dispatchKeySet, condition, self, other);
     }
     
     // aten::norm_except_dim(Tensor v, int pow=2, int dim=0) -> Tensor
@@ -10165,6 +10165,11 @@ namespace redispatch {
     // aten::alias(Tensor(a) self) -> Tensor(a)
     TORCH_API inline at::Tensor alias(c10::DispatchKeySet dispatchKeySet, const at::Tensor & self) {
         return at::_ops::alias::redispatch(dispatchKeySet, self);
+    }
+    
+    // aten::_index_copy_(Tensor(a!) self, int dim, Tensor index, Tensor source) -> Tensor(a!)
+    TORCH_API inline at::Tensor & _index_copy_(c10::DispatchKeySet dispatchKeySet, at::Tensor & self, int64_t dim, const at::Tensor & index, const at::Tensor & source) {
+        return at::_ops::_index_copy_::redispatch(dispatchKeySet, self, dim, index, source);
     }
     
     // aten::_amp_foreach_non_finite_check_and_unscale_(Tensor(a!)[] self, Tensor(b!) found_inf, Tensor inv_scale) -> ()
@@ -14305,11 +14310,6 @@ namespace redispatch {
     // aten::unflatten_dense_tensors(Tensor flat, Tensor[] tensors) -> Tensor[]
     TORCH_API inline ::std::vector<at::Tensor> unflatten_dense_tensors(c10::DispatchKeySet dispatchKeySet, const at::Tensor & flat, at::TensorList tensors) {
         return at::_ops::unflatten_dense_tensors::redispatch(dispatchKeySet, flat, tensors);
-    }
-    
-    // aten::_nested_tensor(Tensor[] list, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None) -> Tensor
-    TORCH_API inline at::Tensor _nested_tensor(c10::DispatchKeySet dispatchKeySet, at::TensorList list, c10::optional<at::ScalarType> dtype=c10::nullopt, c10::optional<at::Layout> layout=c10::nullopt, c10::optional<at::Device> device=c10::nullopt, c10::optional<bool> pin_memory=c10::nullopt) {
-        return at::_ops::_nested_tensor::redispatch(dispatchKeySet, list, dtype, layout, device, pin_memory);
     }
 } // namespace redispatch
 

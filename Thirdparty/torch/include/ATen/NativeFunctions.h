@@ -156,6 +156,7 @@
 #include <ATen/ops/_histogramdd_bin_edges_native.h>
 #include <ATen/ops/_histogramdd_from_bin_cts_native.h>
 #include <ATen/ops/_histogramdd_from_bin_tensors_native.h>
+#include <ATen/ops/_index_copy_native.h>
 #include <ATen/ops/_index_put_impl_native.h>
 #include <ATen/ops/_indices_native.h>
 #include <ATen/ops/_is_zerotensor_native.h>
@@ -175,8 +176,8 @@
 #include <ATen/ops/_masked_softmax_native.h>
 #include <ATen/ops/_mkldnn_reshape_native.h>
 #include <ATen/ops/_mkldnn_transpose_native.h>
+#include <ATen/ops/_native_multi_head_self_attention_native.h>
 #include <ATen/ops/_neg_view_native.h>
-#include <ATen/ops/_nested_tensor_native.h>
 #include <ATen/ops/_new_zeros_with_same_feature_meta_native.h>
 #include <ATen/ops/_nnpack_available_native.h>
 #include <ATen/ops/_nnpack_spatial_convolution_native.h>
@@ -191,6 +192,7 @@
 #include <ATen/ops/_reshape_alias_native.h>
 #include <ATen/ops/_reshape_from_tensor_native.h>
 #include <ATen/ops/_rowwise_prune_native.h>
+#include <ATen/ops/_s_where_native.h>
 #include <ATen/ops/_sample_dirichlet_native.h>
 #include <ATen/ops/_saturate_weight_to_fp16_native.h>
 #include <ATen/ops/_segment_reduce_backward_native.h>

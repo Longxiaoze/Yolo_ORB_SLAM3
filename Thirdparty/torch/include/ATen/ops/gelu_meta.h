@@ -20,7 +20,7 @@ namespace meta {
 struct TORCH_API structured_gelu : public TensorIteratorBase {
     
     
-    void meta(const at::Tensor & self, c10::string_view approximate);
+    void meta(const at::Tensor & self);
 };
 
 } // namespace native

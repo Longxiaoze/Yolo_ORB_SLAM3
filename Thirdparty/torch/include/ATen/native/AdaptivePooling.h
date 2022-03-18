@@ -1,12 +1,9 @@
 #pragma once
 
+#include <ATen/ATen.h>
 #include <ATen/native/DispatchStub.h>
-#include <cmath>
 
-namespace at {
-class Tensor;
-
-namespace native {
+namespace at { namespace native {
 
 using adaptive_avg_pooling_fn = void(*)(Tensor& output, const Tensor& input, IntArrayRef output_size);
 using adaptive_avg_pooling_backward_fn = void(*)(Tensor& grad_input, const Tensor& grad_output);

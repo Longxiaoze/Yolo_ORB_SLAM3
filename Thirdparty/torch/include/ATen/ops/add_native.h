@@ -17,10 +17,7 @@
 namespace at {
 namespace native {
 
-struct TORCH_API structured_ufunc_add_CPU : public at::meta::structured_add_Tensor {
-void impl(const at::Tensor & self, const at::Tensor & other, const at::Scalar & alpha, const at::Tensor & out);
-};
-struct TORCH_API structured_ufunc_add_CUDA : public at::meta::structured_add_Tensor {
+struct TORCH_API structured_add_out : public at::meta::structured_add_Tensor {
 void impl(const at::Tensor & self, const at::Tensor & other, const at::Scalar & alpha, const at::Tensor & out);
 };
 TORCH_API at::Tensor add_sparse(const at::Tensor & self, const at::Tensor & other, const at::Scalar & alpha=1);

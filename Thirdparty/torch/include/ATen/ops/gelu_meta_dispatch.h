@@ -39,9 +39,9 @@ using c10::TensorOptions;
 
 namespace meta {
 
-TORCH_API at::Tensor gelu(const at::Tensor & self, c10::string_view approximate="none");
-TORCH_API at::Tensor & gelu_out(at::Tensor & out, const at::Tensor & self, c10::string_view approximate="none");
-TORCH_API at::Tensor & gelu_outf(const at::Tensor & self, c10::string_view approximate, at::Tensor & out);
+TORCH_API at::Tensor gelu(const at::Tensor & self);
+TORCH_API at::Tensor & gelu_out(at::Tensor & out, const at::Tensor & self);
+TORCH_API at::Tensor & gelu_outf(const at::Tensor & self, at::Tensor & out);
 
 } // namespace meta
 } // namespace at

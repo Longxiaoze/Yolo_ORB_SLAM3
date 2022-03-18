@@ -291,7 +291,6 @@ struct TORCH_API SharedParserData {
     switch (kind) {
       case '?':
       case TK_POW:
-      case TK_IF:
         return true;
       default:
         return false;

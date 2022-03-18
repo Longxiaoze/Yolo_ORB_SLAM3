@@ -12,14 +12,13 @@
 #include <ATen/core/Tensor.h>
 #include <tuple>
 #include <vector>
-#include <ATen/ops/linalg_cross_meta.h>
+
 
 namespace at {
 namespace native {
 
-struct TORCH_API structured_linalg_cross_out : public at::meta::structured_linalg_cross {
-void impl(const at::Tensor & self, const at::Tensor & other, int64_t dim, const at::Tensor & out);
-};
+TORCH_API at::Tensor linalg_cross(const at::Tensor & self, const at::Tensor & other, int64_t dim=-1);
+TORCH_API at::Tensor & linalg_cross_out(const at::Tensor & self, const at::Tensor & other, int64_t dim, at::Tensor & out);
 
 } // namespace native
 } // namespace at

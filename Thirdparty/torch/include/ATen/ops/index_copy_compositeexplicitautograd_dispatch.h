@@ -39,8 +39,8 @@ using c10::TensorOptions;
 
 namespace compositeexplicitautograd {
 
-TORCH_API at::Tensor index_copy(const at::Tensor & self, int64_t dim, const at::Tensor & index, const at::Tensor & source);
 TORCH_API at::Tensor & index_copy_(at::Tensor & self, int64_t dim, const at::Tensor & index, const at::Tensor & source);
+TORCH_API at::Tensor index_copy(const at::Tensor & self, int64_t dim, const at::Tensor & index, const at::Tensor & source);
 
 } // namespace compositeexplicitautograd
 } // namespace at

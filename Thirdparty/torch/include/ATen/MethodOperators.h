@@ -242,6 +242,7 @@ using c10::TensorOptions;
 #include <ATen/ops/less_equal_ops.h>
 #include <ATen/ops/less_ops.h>
 #include <ATen/ops/lgamma_ops.h>
+#include <ATen/ops/linalg_solve_triangular_ops.h>
 #include <ATen/ops/log10_ops.h>
 #include <ATen/ops/log1p_ops.h>
 #include <ATen/ops/log2_ops.h>

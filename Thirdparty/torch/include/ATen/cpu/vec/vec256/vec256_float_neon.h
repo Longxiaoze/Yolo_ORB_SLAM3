@@ -6,11 +6,6 @@
 #include <ATen/cpu/vec/intrinsics.h>
 #include <ATen/cpu/vec/vec_base.h>
 #include <c10/util/irange.h>
-
-#if defined(__aarch64__) && defined(AT_BUILD_ARM_VEC256_WITH_SLEEF)
-#include <sleef.h>
-#endif
-
 // Sleef offers vectorized versions of some transcedentals
 // such as sin, cos, tan etc..
 // However for now opting for STL, since we are not building
@@ -34,12 +29,6 @@ inline namespace CPU_CAPABILITY {
 
 #ifdef __BIG_ENDIAN__
 #error "Big endian is not supported."
-#endif
-
-#if defined(AT_BUILD_ARM_VEC256_WITH_SLEEF)
-#define USE_SLEEF(sleef_code, non_sleef_code) sleef_code
-#else
-#define USE_SLEEF(sleef_code, non_sleef_code) non_sleef_code
 #endif
 
 template<int index, bool mask_val>
@@ -335,121 +324,68 @@ public:
     return *this;
   }
   Vectorized<float> acos() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_acosf4_u10(values.val[0]), Sleef_acosf4_u10(values.val[1])),
-      map(std::acos)
-    );
+    return map(std::acos);
   }
   Vectorized<float> asin() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_asinf4_u10(values.val[0]), Sleef_asinf4_u10(values.val[1])),
-      map(std::asin)
-    );
+    return map(std::asin);
   }
   Vectorized<float> atan() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_atanf4_u10(values.val[0]), Sleef_atanf4_u10(values.val[1])),
-      map(std::atan)
-    );
+    return map(std::atan);
   }
   Vectorized<float> atan2(const Vectorized<float> &exp) const {
-    USE_SLEEF(
-      {
-        return Vectorized<float>(Sleef_atan2f4_u10(values.val[0], exp.values.val[0]),
-                                 Sleef_atan2f4_u10(values.val[1], exp.values.val[1]));
-      },
-      {
-        __at_align__ float tmp[size()];
-        __at_align__ float tmp_exp[size()];
-        store(tmp);
-        exp.store(tmp_exp);
-        for (const auto i : c10::irange(size())) {
-          tmp[i] = std::atan2(tmp[i], tmp_exp[i]);
-        }
-        return loadu(tmp);
-      }
-    )
+    __at_align__ float tmp[size()];
+    __at_align__ float tmp_exp[size()];
+    store(tmp);
+    exp.store(tmp_exp);
+    for (const auto i : c10::irange(size())) {
+      tmp[i] = std::atan2(tmp[i], tmp_exp[i]);
+    }
+    return loadu(tmp);
   }
   Vectorized<float> copysign(const Vectorized<float> &sign) const {
-    USE_SLEEF(
-      {
-        return Vectorized<float>(Sleef_copysignf4(values.val[0], sign.values.val[0]),
-                                 Sleef_copysignf4(values.val[1], sign.values.val[1]));
-      },
-      {
-        __at_align__ float tmp[size()];
-        __at_align__ float tmp_sign[size()];
-        store(tmp);
-        sign.store(tmp_sign);
-        for (size_type i = 0; i < size(); i++) {
-          tmp[i] = std::copysign(tmp[i], tmp_sign[i]);
-        }
-        return loadu(tmp);
-      }
-    )
+    __at_align__ float tmp[size()];
+    __at_align__ float tmp_sign[size()];
+    store(tmp);
+    sign.store(tmp_sign);
+    for (size_type i = 0; i < size(); i++) {
+      tmp[i] = std::copysign(tmp[i], tmp_sign[i]);
+    }
+    return loadu(tmp);
   }
   Vectorized<float> erf() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_erff4_u10(values.val[0]), Sleef_erff4_u10(values.val[1])),
-      map(std::erf);
-    );
+    return map(std::erf);
   }
   Vectorized<float> erfc() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_erfcf4_u15(values.val[0]), Sleef_erfcf4_u15(values.val[1])),
-      map(std::erfc)
-    );
+    return map(std::erfc);
   }
   Vectorized<float> erfinv() const {
     return map(calc_erfinv);
   }
   Vectorized<float> exp() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_expf4_u10(values.val[0]), Sleef_expf4_u10(values.val[1])),
-      map(std::exp)
-    );
+    return map(std::exp);
   }
   Vectorized<float> expm1() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_expm1f4_u10(values.val[0]), Sleef_expm1f4_u10(values.val[1])),
-      map(std::expm1)
-    );
+    return map(std::expm1);
   }
   Vectorized<float> fmod(const Vectorized<float>& q) const {
-    USE_SLEEF(
-      {
-        return Vectorized<float>(Sleef_fmodf4(values.val[0], q.values.val[0]),
-                                 Sleef_fmodf4(values.val[1], q.values.val[1]));
-      },
-      {
-        __at_align__ float tmp[size()];
-        __at_align__ float tmp_q[size()];
-        store(tmp);
-        q.store(tmp_q);
-        for (const auto i : c10::irange(size())) {
-          tmp[i] = std::fmod(tmp[i], tmp_q[i]);
-        }
-        return loadu(tmp);
-      }
-    )
+    __at_align__ float tmp[size()];
+    __at_align__ float tmp_q[size()];
+    store(tmp);
+    q.store(tmp_q);
+    for (const auto i : c10::irange(size())) {
+      tmp[i] = std::fmod(tmp[i], tmp_q[i]);
+    }
+    return loadu(tmp);
   }
   Vectorized<float> hypot(const Vectorized<float> &b) const {
-    USE_SLEEF(
-      {
-        return Vectorized<float>(Sleef_hypotf4_u05(values.val[0], b.values.val[0]),
-                                 Sleef_hypotf4_u05(values.val[1], b.values.val[1]));
-      },
-      {
-        __at_align__ float tmp[size()];
-        __at_align__ float tmp_b[size()];
-        store(tmp);
-        b.store(tmp_b);
-        for (const auto i : c10::irange(size())) {
-          tmp[i] = std::hypot(tmp[i], tmp_b[i]);
-        }
-        return loadu(tmp);
-      }
-    )
+    __at_align__ float tmp[size()];
+    __at_align__ float tmp_b[size()];
+    store(tmp);
+    b.store(tmp_b);
+    for (const auto i : c10::irange(size())) {
+      tmp[i] = std::hypot(tmp[i], tmp_b[i]);
+    }
+    return loadu(tmp);
   }
   Vectorized<float> i0() const {
     return map(calc_i0);
@@ -478,71 +414,39 @@ public:
     return loadu(tmp);
   }
   Vectorized<float> log() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_logf4_u10(values.val[0]), Sleef_logf4_u10(values.val[1])),
-      map(std::log)
-    );
+    return map(std::log);
   }
   Vectorized<float> log10() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_log10f4_u10(values.val[0]), Sleef_log10f4_u10(values.val[1])),
-      map(std::log10)
-    );
+    return map(std::log10);
   }
   Vectorized<float> log1p() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_log1pf4_u10(values.val[0]), Sleef_log1pf4_u10(values.val[1])),
-      map(std::log1p)
-    );
+    return map(std::log1p);
   }
   Vectorized<float> log2() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_log2f4_u10(values.val[0]), Sleef_log2f4_u10(values.val[1])),
-      map(std::log2)
-    );
+    return map(std::log2);
   }
   Vectorized<float> nextafter(const Vectorized<float> &b) const {
-    USE_SLEEF(
-      {
-        return Vectorized<float>(Sleef_nextafterf4(values.val[0], b.values.val[0]),
-                                 Sleef_nextafterf4(values.val[1], b.values.val[1]));
-      },
-      {
-        __at_align__ float tmp[size()];
-        __at_align__ float tmp_b[size()];
-        store(tmp);
-        b.store(tmp_b);
-        for (const auto i : c10::irange(size())) {
-          tmp[i] = std::nextafter(tmp[i], tmp_b[i]);
-        }
-        return loadu(tmp);
-      }
-    )
+    __at_align__ float tmp[size()];
+    __at_align__ float tmp_b[size()];
+    store(tmp);
+    b.store(tmp_b);
+    for (const auto i : c10::irange(size())) {
+      tmp[i] = std::nextafter(tmp[i], tmp_b[i]);
+    }
+    return loadu(tmp);
   }
   Vectorized<float> frac() const;
   Vectorized<float> sin() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_sinf4_u10(values.val[0]), Sleef_sinf4_u10(values.val[1])),
-      map(std::sin)
-    );
+    return map(std::sin);
   }
   Vectorized<float> sinh() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_sinhf4_u10(values.val[0]), Sleef_sinhf4_u10(values.val[1])),
-      map(std::sinh)
-    );
+    return map(std::sinh);
   }
   Vectorized<float> cos() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_cosf4_u10(values.val[0]), Sleef_cosf4_u10(values.val[1])),
-      map(std::cos)
-    );
+    return map(std::cos);
   }
   Vectorized<float> cosh() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_coshf4_u10(values.val[0]), Sleef_coshf4_u10(values.val[1])),
-      map(std::cosh)
-    );
+    return map(std::cosh);
   }
   Vectorized<float> ceil() const {
     return map(at::native::ceil_impl);
@@ -560,16 +464,10 @@ public:
     return map(at::native::round_impl);
   }
   Vectorized<float> tan() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_tanf4_u10(values.val[0]), Sleef_tanf4_u10(values.val[1])),
-      map(std::tan)
-    );
+    return map(std::tan);
   }
   Vectorized<float> tanh() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_tanhf4_u10(values.val[0]), Sleef_tanhf4_u10(values.val[1])),
-      map(std::tanh)
-    );
+    return map(std::tanh);
   }
   Vectorized<float> trunc() const {
     float32x4_t r0 = vrndq_f32(values.val[0]);
@@ -577,10 +475,7 @@ public:
     return Vectorized<float>(r0, r1);
   }
   Vectorized<float> lgamma() const {
-    return USE_SLEEF(
-      Vectorized<float>(Sleef_lgammaf4_u10(values.val[0]), Sleef_lgammaf4_u10(values.val[1])),
-      map(std::lgamma)
-    );
+    return map(std::lgamma);
   }
   Vectorized<float> sqrt() const {
     return Vectorized<float>(
@@ -596,22 +491,14 @@ public:
     return this->sqrt().reciprocal();
   }
   Vectorized<float> pow(const Vectorized<float> &exp) const {
-    USE_SLEEF(
-      {
-        return Vectorized<float>(Sleef_powf4_u10(values.val[0], exp.values.val[0]),
-                                 Sleef_powf4_u10(values.val[1], exp.values.val[1]));
-      },
-      {
-        __at_align__ float tmp[size()];
-        __at_align__ float tmp_exp[size()];
-        store(tmp);
-        exp.store(tmp_exp);
-        for (const auto i : c10::irange(size())) {
-          tmp[i] = std::pow(tmp[i], tmp_exp[i]);
-        }
-        return loadu(tmp);
-      }
-    )
+    __at_align__ float tmp[size()];
+    __at_align__ float tmp_exp[size()];
+    store(tmp);
+    exp.store(tmp_exp);
+    for (const auto i : c10::irange(size())) {
+      tmp[i] = std::pow(tmp[i], tmp_exp[i]);
+    }
+    return loadu(tmp);
   }
   Vectorized<float> operator==(const Vectorized<float>& other) const {
     float32x4_t r0 =
